@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url('../image/bg-login.jpg');
+    background-size: cover;
+}
+@media screen and (max-width: 575px) {
+    .gap-3 {
+        text-align: center;
+    }
+
+    .col-sm-3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.custom-btn {
+    transition: background 0.9s ease-in-out;
+    background: linear-gradient(45deg,  #2196F3, #4CAF50);
+}
+.custom-btn:hover {
+    background: linear-gradient(45deg, #4CAF50, #2196F3);
+}

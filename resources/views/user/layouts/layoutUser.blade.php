@@ -33,7 +33,7 @@
                             <a aria-current="page" class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="/ppdb">PPDB</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
@@ -48,7 +48,9 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                             </ul>
                         </li>
-                        <button class="btn btn-success ms-3">Login</button>
+                        <a href="/login">
+                            <button class="btn btn-success ms-3">Login</button>
+                        </a>
                     </ul>
                 </div>
             </div>
