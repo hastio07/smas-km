@@ -13,12 +13,12 @@
 
 <body>
     <section>
-        <nav class="navbar navbar-expand-lg nav-style fixed-top">
+        <nav class="navbar navbar-expand-lg nav-style fixed-top bg-body-tertiary">
             <div class="container-fluid container">
                 <a class="navbar-brand" href="#">
                     <div class="d-flex align-items-center gap-3">
                         <img alt="Logo" class="d-inline-block align-text-top" height="60" src="{{ asset('assets/image/logo.png') }}" width="60">
-                        <div class="ml-2">
+                        <div class="ml-2 name-sch">
                             <h5 class="fw-bold mb-0">SMAK Kartikatama</h5>
                             <p class="mb-0">Kota Metro</p>
                         </div>
@@ -27,7 +27,7 @@
                 <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="navbar-collapse collapse" id="navbarNavDropdown">
+                <div class="navbar-collapse collapse text-center" id="navbarNavDropdown" >
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a aria-current="page" class="nav-link active" href="#">Home</a>
@@ -60,25 +60,48 @@
             <div class="bg-success py-4">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-xl-4 mt-4">
                             <div class="d-flex gap-3">
                                 <img alt="..." class="img-thumbnail" height="90" src="{{ asset('assets/image/logo.png') }}" width="90">
-                                <h2>Lorem Ipsum</h2>
+                                <div>
+                                    <h5 class="underline-animation">SMAS 1 Kartikatama</h5>
+                                </div>
                             </div>
-                            <p class="mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus error non id quaerat impedit reiciendis saepe minima nesciunt placeat ex excepturi eveniet eum sunt modi, pariatur ipsum facilis provident aliquam!</p>
+                            <p class="mt-3 mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus error non id quaerat impedit reiciendis saepe minima nesciunt placeat ex excepturi eveniet eum sunt modi, pariatur ipsum facilis provident aliquam!</p>
                         </div>
-                        <div class="col-md-4">
-                            ini bagian ul li
+                        <div class="col-xl-4 mt-4">
+                            <h5 class="underline-animation">Kontak</h5>
+                            <div class="kontak mt-4">
+                                <div class="d-flex align-items-center gap-2">
+                                    <i class="bi bi-geo-alt-fill fs-5"></i>
+                                    <p class="mb-0" style="font-size: small">Jl. Kapten Tendean, Margorejo, Kec. Metro Sel., Kota Metro, Lampung 34111</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <i class="bi bi-envelope-fill fs-5"></i>
+                                    <p class="mb-0" style="font-size: small">Smas-metro@sch.id</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <i class="bi bi-telephone-fill fs-5 "></i>
+                                    <p class="mb-0" style="font-size: small">+0732-2289</p>
+                                </div>
+                                <div class="d-flex align-items-center gap-2 mt-2">
+                                    <i class="bi bi-whatsapp fs-5"></i>
+                                    <p class="mb-0" style="font-size: small">+628-1267-3298-763</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-4 d-flex gap-3">
-                            <div>
-                                <i class="bi bi-facebook bg-primary fs-4 rounded p-2"></i>
-                            </div>
-                            <div>
-                                <i class="bi bi-instagram fs-4 rounded p-2"></i>
-                            </div>
-                            <div>
-                                <i class="bi bi-youtube bg-danger fs-4 rounded p-2"></i>
+                        <div class="col-xl-4 mt-4">
+                            <h5 class="underline-animation">Follow Kami</h5>
+                            <div class=" d-flex gap-3 mt-4 socmed">
+                                <a href="">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                                <a href="">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
                             </div>
                         </div>
 
