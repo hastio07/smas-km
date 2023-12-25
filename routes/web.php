@@ -23,3 +23,9 @@ Route::get('/login', function () {
 Route::get('/sambutan', function () {
     return view('user/Sambutan');
 });
+Route::get('/ppdb', function () {
+    return view('user/ppdb');
+});
+Route::get('/profil', function () {
+    return view('user/Profil');
+});
