@@ -4,6 +4,7 @@
 
 @push('styles')
     <link href="{{ asset('assets/css/ppdb.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10" rel="stylesheet">
 @endpush
 
 @section('konten')
@@ -98,7 +99,7 @@
                                 <label class="form-label" for="hasil_ibu">Penghasilan Ibu</label>
                                 <input class="form-control" id="hasil_ibu" placeholder="Penghasilan Ibu" type="text">
                             </div>
-                              <div class="mb-3">
+                            <div class="mb-3">
                                 <label class="form-label" for="telephone">No. Telephone/WA</label>
                                 <input class="form-control" id="telephone" placeholder="No. Telephone/WA" type="text">
                             </div>
@@ -130,7 +131,42 @@
                         <p class="fw-bold">Penting !</p>
                     </div>
                     <p class="mb-0">Pastikan berkas yang anda upload sesuai dengan sebagaimana adanya, jika terjadi kesalahan maka diluar tanggung jawab pihak PPDB SMAS Kartikatama Kota Metro</p>
+                </div>
 
+                <label class="fw-bold text-muted mb-1" for="foto">Foto 3x4</label>
+                <div class="inpt-doc d-flex justify-content-between align-items-center mb-4 rounded p-3" id="foto">
+                    <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
+                        <i class="bi bi-file-earmark-minus-fill text-muted"></i>
+                    </div>
+                    <p class="mb-0 ms-3" id="uploadStatus1">Dokumen Belum Diupload</p>
+                    <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
+                        <input class="form-control-file" id="fileInput1" onchange="updateUploadStatus(1)" style="display: none;" type="file">
+                        <label class="btn btn-secondary mb-0" for="fileInput1">Upload</label>
+                    </form>
+                </div>
+
+                <label class="fw-bold text-muted mb-1" for="ijazah">Ijazah/Surat Keterangan Lulus</label>
+                <div class="inpt-doc d-flex justify-content-between align-items-center mb-3 rounded p-3" id="ijazah">
+                    <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
+                        <i class="bi bi-file-earmark-minus-fill text-muted"></i>
+                    </div>
+                    <p class="mb-0 ms-3" id="uploadStatus2">Dokumen Belum Diupload</p>
+                    <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
+                        <input class="form-control-file" id="fileInput2" onchange="updateUploadStatus(2)" style="display: none;" type="file">
+                        <label class="btn btn-secondary mb-0 text-white" for="fileInput2">Upload</label>
+                    </form>
+                </div>
+
+                <label class="fw-bold text-muted mb-1" for="akte">Akte Kelahiran</label>
+                <div class="inpt-doc d-flex justify-content-between align-items-center mb-3 rounded p-3" id="akte">
+                    <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
+                        <i class="bi bi-file-earmark-minus-fill text-muted"></i>
+                    </div>
+                    <p class="mb-0 ms-3" id="uploadStatus3">Dokumen Belum Diupload</p>
+                    <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
+                        <input class="form-control-file" id="fileInput3" onchange="updateUploadStatus(3)" style="display: none;" type="file">
+                        <label class="btn btn-secondary mb-0 text-white" for="fileInput3">Upload</label>
+                    </form>
                 </div>
             </div>
             <div class="output-message" id="pesan4">
@@ -213,6 +249,10 @@
         </div>
     </section>
 
+    <!-- Sertakan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Sertakan SweetAlert JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
         // bring elements from the DOM
         const progress = document.getElementById("progress");
@@ -263,5 +303,29 @@
 
         // Inisialisasi tampilan awal
         update();
+    </script>
+    <script>
+        function updateUploadStatus(formNumber) {
+            const fileInput = document.getElementById(`fileInput${formNumber}`);
+            const uploadStatus = document.getElementById(`uploadStatus${formNumber}`);
+
+            if (fileInput.files.length > 0) {
+                uploadStatus.textContent = fileInput.files[0].name;
+            } else {
+                uploadStatus.textContent = `Dokumen Belum Diupload (${formNumber})`;
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Tambahkan event click pada tombol "Next"
+            $('#next').click(function() {
+                Swal.fire({
+                    title: "Selamat",
+                    text: "Anda Behasil Melaju Ketahap Selanjutnya",
+                    icon: "success"
+                });
+            });
+        });
     </script>
 @endsection

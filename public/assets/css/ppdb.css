@@ -1,12 +1,12 @@
+/* css untuk memberikan garis bawah */
  .smooth-line {
      width: 200px;
      height: 3px;
-     background-color: #333;
-     /* Warna garis */
-     border-radius: 10px;
-     /* Radius untuk membuat tampilan lembut */
+    background-color: #333;
+    border-radius: 10px;
  }
 
+ /* css untuk progres bar */
  .progress-container {
      min-width: 100%;
      width: 350px;
@@ -65,6 +65,7 @@
      display: block;
  }
 
+ /* cass untuk pesan diterima, ditolak, dan diproses */
  .proses {
      background-color: rgba(138, 255, 127, 0.63);
      border: 2px solid rgb(138, 255, 127);
@@ -80,6 +81,7 @@
      border: 2px solid rgb(255, 127, 138);
  }
 
+ /* css untuk memberikan efek pada icon diterima pada step ke-4 */
  @keyframes fadeIn {
      from {
          opacity: 0;
@@ -93,6 +95,12 @@
  }
 
  .center-element {
-     animation: fadeIn 1s ease-out;
-     /* Ganti durasi dan jenis animasi sesuai kebutuhan Anda */
+    animation: fadeIn 1s ease-out;
  }
+/* css untuk upload dokumen pada step ke3 */
+
+.inpt-doc {
+    border: 2px solid #c5c5c5;
+    background-color: #ebebeb;
+    border-style: dashed;
+}
