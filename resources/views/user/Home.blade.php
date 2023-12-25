@@ -35,7 +35,7 @@
                         <div class="card-body">
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <a href="/sambutan">
-                                <button class="btn btn-success">Baca Selengkapnya</button>
+                                <button class="btn bg-smas">Baca Selengkapnya</button>
                             </a>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                         <div class="card-body">
                             <h3 class="fw-bold">Lorem Ipsum!</h3>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <button class="btn btn-success">Selengkapnya</button>
+                            <button class="btn bg-smas">Selengkapnya</button>
                         </div>
                     </div>
                     <div class="col-md-4">
