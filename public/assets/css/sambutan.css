@@ -1,0 +1,27 @@
+        .carousel-container {
+            height: 100vh;
+            /* Mengatur tinggi carousel sesuai dengan tinggi viewport */
+            overflow: hidden;
+            /* Menghindari tumpukan elemen di luar carousel */
+        }
+
+        /* Gantilah class 'carousel-inner' dengan class yang sesuai di HTML Anda */
+        .carousel-inner {
+            height: 100%;
+            /* Mengisi tinggi carousel sesuai dengan tinggi container */
+        }
+
+        /* Gantilah class 'carousel-item' dengan class yang sesuai di HTML Anda */
+        .carousel-item {
+            height: 100%;
+            /* Mengisi tinggi item carousel sesuai dengan tinggi container */
+        }
+
+        /* Gantilah class 'd-block w-100' dengan class yang sesuai di HTML Anda */
+        .carousel-item img {
+            object-fit: cover;
+            /* Memastikan gambar mengisi seluruh area item tanpa memutarannya */
+            height: 100%;
+            /* Sesuaikan tinggi gambar dengan tinggi item carousel */
+            width: 100%;
+        }
