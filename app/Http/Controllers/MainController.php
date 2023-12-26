@@ -23,4 +23,8 @@ class MainController extends Controller
     {
         return view('Profil');
     }
+    public function detailguru()
+    {
+        return view('DetailGuru');
+    }
 }

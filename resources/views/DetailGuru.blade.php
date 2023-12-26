@@ -6,8 +6,13 @@
     <link href="{{ asset('assets/css/ppdb.css') }}" rel="stylesheet">
 @endpush
 
-@section('konten')
-    <Section style="margin-top: 100px;">
+
+@section('header')
+    @include('layouts.includes.header')
+@endsection
+
+@section('content')
+    <Section>
         <div class="container my-5 shadow">
             <div class="row">
                 <div class="col-md-8">
@@ -87,4 +92,8 @@
                 </div>
             </div>
     </Section>
+@endsection
+
+@section('footer')
+    @include('layouts.includes.footer')
 @endsection
