@@ -6,9 +6,17 @@
     <link href="{{ asset('assets/css/profil.css') }}" rel="stylesheet">
 @endpush
 
-@section('konten')
-    <section style="margin-top: 100px;">
-        <div class="container">
+@section('header')
+    @include('layouts.includes.header')
+@endsection
+
+@section('carousel')
+    @include('layouts.includes.carousel')
+@endsection
+
+@section('content')
+    <section>
+        <div class="container mt-5">
             <div class="m-3 rounded p-3 shadow">
                 <h3>Kata Pengantar</h3>
                 <div class="smooth-line"></div>
@@ -70,7 +78,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
-                                    <a class="text-decoration-none text-black" href="">
+                                    <a class="text-decoration-none text-black" href="/DetailGuru">
                                         <div class="card custom-card border-0 p-2">
                                             <img alt="..." class="card-img-top image-fluid" src="{{ asset('assets/image/guru/guru1.jpg') }}">
                                             <div class="card-body text-start">
@@ -89,7 +97,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
-                                    <a class="text-decoration-none text-black" href="">
+                                    <a class="text-decoration-none text-black" href="/DetailGuru">
                                         <div class="card custom-card border-0 p-2">
                                             <img alt="..." class="card-img-top image-fluid" src="{{ asset('assets/image/guru/TU2.jpeg') }}">
                                             <div class="card-body text-start">
@@ -101,21 +109,26 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
-                                    <div class="card custom-card border-0">
-                                        <img alt="..." class="card-img-top image-fluid" src="{{ asset('assets/image/guru/TU1.jpeg') }}">
-                                        <div class="card-body text-start">
-                                            <p class="card-text fw-bold mb-0 text-start">Aisyah Mutamani M.Pd</p>
-                                            <div class="card-line"></div>
-                                            <p class="card-text mt-2">NIP. 1532166346336</p>
+                                    <a href="/DetailGuru" class="text-decoration-none text-black" >
+                                        <div class="card custom-card border-0">
+                                            <img alt="..." class="card-img-top image-fluid" src="{{ asset('assets/image/guru/TU1.jpeg') }}">
+                                            <div class="card-body text-start">
+                                                <p class="card-text fw-bold mb-0 text-start">Aisyah Mutamani M.Pd</p>
+                                                <div class="card-line"></div>
+                                                <p class="card-text mt-2">NIP. 1532166346336</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
+@endsection
+
+@section('footer')
+    @include('layouts.includes.footer')
 @endsection
