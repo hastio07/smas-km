@@ -47,11 +47,8 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <img alt="..." class="object-fit-cover d-block rounded-4 float-start mw-100 me-3" height="250" src="{{ asset('assets/image/kepsek.jpg') }}" width="312">
-                        <p class="text-break lh-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae culpa assumenda fugit a neque minus omnis ipsa delectus ducimus repellendus facere quas expedita eaque, magnam reprehenderit adipisci cum sequi! Voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate alias nam earum deleniti officiis ut placeat veniam. Quas recusandae asperiores aperiam sapiente, amet ipsam officiis rem unde ratione
-                            accusamus.
-                            Lorem
-                            ipsum dolor sit, amet
-                            consectetur adipisicing elit. Fugiat quo nostrum eius error repellat alias! Ratione magnam quod distinctio illo voluptatum ea repellat cumque atque? Praesentium repellat nulla explicabo fuga!</p>
+                        <p class="text-break lh-lg" style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae culpa assumenda fugit a neque minus omnis ipsa delectus ducimus repellendus facere quas expedita eaque, magnam reprehenderit adipisci cum sequi! Voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate alias nam earum deleniti officiis ut placeat veniam. Quas recusandae asperiores aperiam sapiente, amet ipsam officiis rem unde ratione
+                            accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat quo nostrum eius error repellat alias! Ratione magnam quod distinctio illo voluptatum ea repellat cumque atque? Praesentium repellat nulla explicabo fuga!</p>
                     </div>
                 </div>
             </div>
