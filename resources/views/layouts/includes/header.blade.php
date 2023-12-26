@@ -15,8 +15,8 @@
                </button>
                <div class="navbar-collapse collapse text-center" id="navbarNavDropdown">
                    <ul class="navbar-nav ms-auto d-flex align-items-center">
-                       <li class="nav-item position-relative" style="margin-right: 20px;">
-                           <a aria-current="page" class="nav-link active" href="/">HOME</a>
+                       <li class="nav-item position-relative">
+                           <a aria-current="page" class="nav-link text-decoration-none text-dark position-relative active" href="/">HOME</a>
                        </li>
                        <li class="nav-item">
                            <a class="nav-link text-decoration-none text-dark position-relative" href="/ppdb">PPDB</a>
