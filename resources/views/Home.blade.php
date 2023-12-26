@@ -33,7 +33,6 @@
                 </button>
             </div>
         </div>
-        {{-- style="border: 1px solid rgba(0,0,0,0.175); border-radius: 0.375rem --}}
         <div class="mt-5">
             <div class="mb-4">
                 <h3 class="fw-bold">Sambutan Kepala Sekolah</h3>
@@ -54,31 +53,32 @@
             <h3 class="text-center">Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat numquam unde quos harum commodi, quam repudiandae a sequi, eveniet eaque blanditiis. Similique eos recusandae alias praesentium cum officia expedita!</p>
             <div class="row">
-                <div class="col-sm-3">
-                    <img alt="..." class="img-thumbnail" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
+                <div class="col-md-4 col-lg-3 mb-2">
+                    <img alt="..." class="img-thumbnail img-fluid d-block" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
                 </div>
-                <div class="col-sm-3">
-                    <img alt="..." class="img-thumbnail" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
+                <div class="col-md-4 col-lg-3 mb-2">
+                    <img alt="..." class="img-thumbnail img-fluid d-block" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
                 </div>
-                <div class="col-sm-3">
-                    <img alt="..." class="img-thumbnail" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
+                <div class="col-md-4 col-lg-3 mb-2">
+                    <img alt="..." class="img-thumbnail img-fluid d-block" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
                 </div>
-                <div class="col-sm-3">
-                    <img alt="..." class="img-thumbnail" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
+                <div class="col-md-4 col-lg-3 mb-2">
+                    <img alt="..." class="img-thumbnail img-fluid d-block" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
                 </div>
             </div>
+
         </div>
         <div class="mt-5">
             <h3 class="text-center">Lorem Ipsum</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat numquam unde quos harum commodi, quam repudiandae a sequi, eveniet eaque blanditiis. Similique eos recusandae alias praesentium cum officia expedita!</p>
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 mb-2">
                     <div class="card h-100 mb-3 border-0" style="background: rgba(233, 232, 232, 0.336)">
                         <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center justify-content-center p-3">
+                            <div class="col-xl-4 d-flex align-items-center justify-content-center p-3">
                                 <img alt="..." class="img-fluid rounded" src="{{ asset('assets/image/siswa1.jpg') }}">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-xl-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -88,13 +88,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 mb-2">
                     <div class="card h-100 mb-3 border-0" style="background: rgba(233, 232, 232, 0.336)">
                         <div class="row g-0">
-                            <div class="col-md-4 d-flex align-items-center justify-content-center p-3">
+                            <div class="col-xl-4 d-flex align-items-center justify-content-center p-3">
                                 <img alt="..." class="img-fluid rounded" src="{{ asset('assets/image/siswa2.jpg') }}">
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-xl-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -124,16 +124,17 @@
         </div>
         <div class="mt-5">
             <div class="row">
-                <div class="col-md-8">
-                    <h3 class="fw-bold">Lorem Ipsum!</h3>
+                <div class="col-md-8 mt-2">
+                    <h3 class="fw-bold ">Lorem Ipsum!</h3>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <button class="btn bg-smas">Selengkapnya</button>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div class="col-md-4 mt-2 ord d-flex justify-content-center align-items-center">
                     <img alt="Kepala Sekolah" class="w-100 h-100 object-fit-cover d-block rounded-4" src="https://images.freeimages.com/images/large-previews/bca/bees-1239460.jpg">
                 </div>
             </div>
         </div>
+
     </div>
 @endsection
 @section('footer')
