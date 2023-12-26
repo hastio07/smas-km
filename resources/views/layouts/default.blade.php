@@ -21,7 +21,6 @@
         <div class="d-flex flex-column flex-grow-1">
             @yield('header')
             <main class="d-flex flex-column flex-grow-1 justify-content-center">
-                @yield('carousel')
                 @yield('content')
             </main>
             @yield('footer')
