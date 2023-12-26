@@ -17,7 +17,7 @@
         @stack('styles')
     </head>
 
-    <body class="d-flex flex-column">
+    <body class="d-flex flex-column" style=" @if (Route::is('admin.dashboard')) padding-top:0px !important; @endif">
         <div class="d-flex flex-column flex-grow-1">
             @yield('header')
             <main class="d-flex flex-column flex-grow-1 justify-content-center">
