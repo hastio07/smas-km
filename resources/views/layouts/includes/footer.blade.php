@@ -1,6 +1,6 @@
  <footer class="text-white">
-     <div class="bg-smas py-4">
-         <div class="container">
+     <div class="bg-smas">
+         <div class="container py-4">
              <div class="row">
                  <div class="col-xl-4 mt-4">
                      <div class="d-flex gap-3">
