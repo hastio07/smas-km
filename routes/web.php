@@ -29,3 +29,7 @@ Route::get('/ppdb', function () {
 Route::get('/profil', function () {
     return view('user/Profil');
 });
+Route::get('/guru', function () {
+    return view('user/DetailGuru');
+});
+
