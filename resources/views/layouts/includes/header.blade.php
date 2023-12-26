@@ -14,15 +14,28 @@
                    <span class="navbar-toggler-icon"></span>
                </button>
                <div class="navbar-collapse collapse text-center" id="navbarNavDropdown">
-                   <ul class="navbar-nav ms-auto">
-                       <li class="nav-item">
+                   <ul class="navbar-nav ms-auto d-flex align-items-center">
+                       <li class="nav-item position-relative" style="margin-right: 20px;">
                            <a aria-current="page" class="nav-link active" href="/">HOME</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="/ppdb">PPDB</a>
+                           <a class="nav-link text-decoration-none text-dark position-relative" href="/ppdb">PPDB</a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link" href="/profil">PROFIL</a>
+                           <a class="nav-link text-decoration-none text-dark position-relative" href="/profil">PROFIL</a>
+                       </li>
+                       <li class="nav-item dropdown">
+                           <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                               Dropdown
+                           </a>
+                           <ul class="dropdown-menu position-absolute bg-white">
+                               <li><a class="dropdown-item text-decoration-none text-dark" href="#">Action</a></li>
+                               <li><a class="dropdown-item text-decoration-none text-dark" href="#">Another action</a></li>
+                               <li>
+                                   <hr class="dropdown-divider">
+                               </li>
+                               <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           </ul>
                        </li>
                        @auth($guard)
                            <li class="nav-item">
@@ -39,3 +52,25 @@
            </div>
        </nav>
    </header>
+   <script>
+       // Add this JavaScript for toggling dropdown on click
+       document.addEventListener("DOMContentLoaded", function() {
+           var dropdowns = document.querySelectorAll('.dropdown');
+
+           dropdowns.forEach(function(dropdown) {
+               dropdown.addEventListener('click', function() {
+                   dropdown.classList.toggle('show');
+               });
+           });
+
+           window.onclick = function(event) {
+               if (!event.target.matches('.dropdown-toggle')) {
+                   dropdowns.forEach(function(dropdown) {
+                       if (dropdown.classList.contains('show')) {
+                           dropdown.classList.remove('show');
+                       }
+                   });
+               }
+           }
+       });
+   </script>
