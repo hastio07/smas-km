@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('title', 'Home')
 @push('styles')
-    <link href="{{ asset('assets/css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/css-content/user/home.css') }}" rel="stylesheet">
 @endpush
 @section('header')
     @include('layouts.includes.header')
