@@ -3,7 +3,7 @@
 @section('title', 'PPDB')
 
 @push('styles')
-    <link href="{{ asset('assets/css/profil.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/css-content/user/profil.css') }}" rel="stylesheet">
 @endpush
 
 @section('header')
