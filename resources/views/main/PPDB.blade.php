@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('main.layout.default')
 
 @section('title', 'PPDB')
 

@@ -17,13 +17,11 @@
         @stack('styles')
     </head>
 
-    <body class="d-flex flex-column" style=" @if (Route::is('admin.dashboard')) padding-top:0px !important; @endif">
+    <body class="d-flex flex-column">
         <div class="d-flex flex-column flex-grow-1">
-            @yield('header')
             <main class="d-flex flex-column flex-grow-1 justify-content-center">
                 @yield('content')
             </main>
-            @yield('footer')
         </div>
         @stack('scripts')
     </body>

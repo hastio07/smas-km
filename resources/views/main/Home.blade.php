@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('main.layout.default')
 @section('title', 'Home')
 @push('styles')
     <link href="{{ asset('assets/css/css-content/user/home.css') }}" rel="stylesheet">
@@ -125,11 +125,11 @@
         <div class="mt-5">
             <div class="row">
                 <div class="col-md-8 mt-2">
-                    <h3 class="fw-bold ">Lorem Ipsum!</h3>
+                    <h3 class="fw-bold">Lorem Ipsum!</h3>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <button class="btn bg-smas">Selengkapnya</button>
                 </div>
-                <div class="col-md-4 mt-2 ord d-flex justify-content-center align-items-center">
+                <div class="col-md-4 ord d-flex justify-content-center align-items-center mt-2">
                     <img alt="Kepala Sekolah" class="w-100 h-100 object-fit-cover d-block rounded-4" src="https://images.freeimages.com/images/large-previews/bca/bees-1239460.jpg">
                 </div>
             </div>

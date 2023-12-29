@@ -22,8 +22,7 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/sambutan', 'sambutan');
     Route::get('/ppdb', 'ppdb');
     Route::get('/profil', 'profil');
-Route::get('/DetailGuru', 'detailguru');
-
+    Route::get('/DetailGuru', 'detailguru');
 });
 
 // Rute Authentication
@@ -39,4 +38,3 @@ Route::controller(AuthController::class)->middleware(['auth:admin,teacher,studen
     });
     Route::post('logout', 'logout')->name('logout'); // Proses Logout
 });
-

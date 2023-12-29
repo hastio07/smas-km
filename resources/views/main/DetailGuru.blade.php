@@ -1,11 +1,10 @@
-@extends('layouts.default')
+@extends('main.layout.default')
 
 @section('title', 'PPDB')
 
 @push('styles')
     <link href="{{ asset('assets/css/css-content/user/ppdb.css') }}" rel="stylesheet">
 @endpush
-
 
 @section('header')
     @include('layouts.includes.header')
