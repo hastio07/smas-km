@@ -227,7 +227,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="link" href="/manageguru">
+                        <a class="link" href="/guru">
                             <i class="ti-home"></i>
                             <span>Manage Guru</span>
                         </a>

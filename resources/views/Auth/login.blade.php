@@ -1,7 +1,7 @@
 @extends('layouts.default')
 @section('title', 'Login')
 @push('styles')
-    <link href="{{ asset('assets/css/login.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/css-content/user/login.css') }}" rel="stylesheet">
 @endpush
 @section('content')
     <div class="d-flex align-items-center justify-content-center vh-100">
