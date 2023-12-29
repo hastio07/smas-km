@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\GuruController;
+
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -37,6 +39,10 @@ Route::controller(AuthController::class)->middleware(['auth:admin,teacher,studen
     Route::controller(AdminController::class)->group(function () {
         Route::get('admin', 'index')->name('admin.dashboard'); // Admin Dashboard
     });
+Route::controller(GuruController::class)->group(function () {
+    Route::get('guru', 'index')->name('admin.manageguru'); // Admin Dashboard
+});
+
     Route::post('logout', 'logout')->name('logout'); // Proses Logout
 });
 
