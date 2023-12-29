@@ -6,25 +6,26 @@ class MainController extends Controller
 {
     public function home()
     {
-        return view('Home');
+        return view('main.Home');
     }
 
     public function sambutan()
     {
-        return view('Sambutan');
+        return view('main.Sambutan');
     }
 
     public function ppdb()
     {
-        return view('PPDB');
+        return view('main.PPDB');
     }
 
     public function profil()
     {
-        return view('Profil');
+        return view('main.Profil');
     }
+
     public function detailguru()
     {
-        return view('DetailGuru');
+        return view('main.DetailGuru');
     }
 }

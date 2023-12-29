@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('main.layout.default')
 
 @section('title', 'PPDB')
 
@@ -106,7 +106,7 @@
                                     </a>
                                 </div>
                                 <div class="col-lg-3 col-md-6 col-sm-6 mt-2">
-                                    <a href="/DetailGuru" class="text-decoration-none text-black" >
+                                    <a class="text-decoration-none text-black" href="/DetailGuru">
                                         <div class="card custom-card border-0">
                                             <img alt="..." class="card-img-top image-fluid" src="{{ asset('assets/image/guru/TU1.jpeg') }}">
                                             <div class="card-body text-start">
