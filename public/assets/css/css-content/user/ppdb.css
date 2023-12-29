@@ -1,0 +1,107 @@
+/* css untuk memberikan garis bawah */
+.smooth-line {
+    width: 200px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/* css untuk progres bar */
+.progress-container {
+    min-width: 100%;
+    width: 350px;
+}
+
+.progress-container::before {
+    content: '';
+    background-color: rgb(194, 193, 193);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.progress {
+    background-color: #4a397e !important;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 5px !important;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.circle {
+    background-color: #826ebd !important;
+    color: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 3px solid rgba(175, 175, 175, 0.726) !important;
+    transition: .4s ease;
+}
+
+.circle.active {
+    background-color: #4a397e !important;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.output-message {
+    display: none;
+}
+
+.output-message.active {
+    display: block;
+}
+
+/* cass untuk pesan diterima, ditolak, dan diproses */
+.proses {
+    background-color: rgba(138, 255, 127, 0.63);
+    border: 2px solid rgb(138, 255, 127);
+}
+
+.terima {
+    background-color: rgba(127, 197, 255, 0.63);
+    border: 5px solid rgb(127, 240, 255);
+}
+
+.tolak {
+    background-color: rgba(255, 127, 155, 0.63);
+    border: 2px solid rgb(255, 127, 138);
+}
+
+/* css untuk memberikan efek pada icon diterima pada step ke-4 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+        to {
+            opacity: 1;
+            transform: scale(1);
+        }
+        }
+
+.center-element {
+    animation: fadeIn 1s ease-out;
+}
+
+/* css untuk upload dokumen pada step ke3 */
+
+.inpt-doc {
+    border: 2px solid #c5c5c5;
+    background-color: #ebebeb;
+    border-style: dashed;
+}
