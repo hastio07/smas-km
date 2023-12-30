@@ -10,7 +10,7 @@
         <div class="content-wrapper rounded p-3 shadow">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="card rounded-2 mb-3 p-3 count-teach">
+                    <div class="card rounded-2 count-teach mb-3 p-3">
                         <div class="d-flex justify-content-between align-items-start">
                             <h5 class="fw-bold mt-2">Total Guru</h5>
                             <div class="rounded-2 bg-primary d-flex justify-content-center align-items-center m-1 p-4 text-white shadow" style="height:30px; width: 30px;">
