@@ -6,9 +6,7 @@
     <link href="{{ asset('assets/css/css-content/user/ppdb.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@10" rel="stylesheet">
 @endpush
-@section('header')
-    @include('layouts.includes.header')
-@endsection
+
 @section('content')
     <section style="padding: 70px 0;">
         <div class="container rounded shadow">
@@ -335,7 +333,3 @@
         });
     </script>
 @endpush
-
-@section('footer')
-    @include('layouts.includes.footer')
-@endsection

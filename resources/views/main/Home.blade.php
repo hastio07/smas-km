@@ -3,9 +3,7 @@
 @push('styles')
     <link href="{{ asset('assets/css/css-content/user/home.css') }}" rel="stylesheet">
 @endpush
-@section('header')
-    @include('layouts.includes.header')
-@endsection
+
 @section('content')
     <div class="container" style="padding-bottom: 70px;">
         <div class="mt-5">
@@ -136,7 +134,4 @@
         </div>
 
     </div>
-@endsection
-@section('footer')
-    @include('layouts.includes.footer')
 @endsection

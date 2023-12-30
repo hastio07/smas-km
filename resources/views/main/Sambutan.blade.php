@@ -1,9 +1,7 @@
 @extends('main.layout.default')
 
 @section('title', 'Sambutan Kepala Sekolah')
-@section('header')
-    @include('layouts.includes.header')
-@endsection
+
 @section('content')
     <section>
         <div class="container" style="padding-bottom: 70px;">
@@ -55,7 +53,4 @@
             </div>
         </div>
     </section>
-@endsection
-@section('footer')
-    @include('layouts.includes.footer')
 @endsection

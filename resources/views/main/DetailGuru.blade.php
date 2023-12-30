@@ -6,10 +6,6 @@
     <link href="{{ asset('assets/css/css-content/user/ppdb.css') }}" rel="stylesheet">
 @endpush
 
-@section('header')
-    @include('layouts.includes.header')
-@endsection
-
 @section('content')
     <Section>
         <div class="container my-5 shadow">
@@ -91,8 +87,4 @@
                 </div>
             </div>
     </Section>
-@endsection
-
-@section('footer')
-    @include('layouts.includes.footer')
 @endsection

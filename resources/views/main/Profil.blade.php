@@ -6,10 +6,6 @@
     <link href="{{ asset('assets/css/css-content/user/profil.css') }}" rel="stylesheet">
 @endpush
 
-@section('header')
-    @include('layouts.includes.header')
-@endsection
-
 @section('content')
     @include('layouts.includes.carousel')
     <section>
@@ -124,8 +120,4 @@
             </div>
         </div>
     </section>
-@endsection
-
-@section('footer')
-    @include('layouts.includes.footer')
 @endsection
