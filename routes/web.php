@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\NewsController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TeacherController;
 use Illuminate\Support\Facades\Route;
 
@@ -43,6 +44,9 @@ Route::controller(AuthController::class)->middleware(['auth:admin,teacher,studen
     });
     Route::controller(NewsController::class)->group(function () {
         Route::get('news', 'index')->name('admin.adminnews'); // Admin Dashboard
+    });
+    Route::controller(ProfileController::class)->group(function () {
+        Route::get('profile', 'index')->name('admin.adminprofile'); // Admin Dashboard
     });
 
     Route::post('logout', 'logout')->name('logout'); // Proses Logout
