@@ -9,7 +9,7 @@
             <div class="gap-3">
                 <div class="row">
                     <div class="col-sm-3 d-flex align-items-center justify-content-center">
-                        <img alt="..." class="img-thumbnail border-0" height="90" src="{{ asset('assets/image/logo.png') }}" width="90">
+                        <img alt="..." class="img-thumbnail border-0" height="90" src="{{ asset('assets/image/logo.jpg')}}" width="90">
                     </div>
                     <div class="col-sm-9">
                         <h4 class="mb-0 mt-3">SMAS Kartikatama</h4>

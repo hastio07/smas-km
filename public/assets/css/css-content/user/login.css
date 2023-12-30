@@ -24,9 +24,9 @@ body {
 
 .custom-btn {
     transition: background 0.9s ease-in-out;
-    background: linear-gradient(45deg, #2196F3, #4CAF50);
+    background: linear-gradient(45deg, #20004b, #56458b);
 }
 
 .custom-btn:hover {
-    background: linear-gradient(45deg, #4CAF50, #2196F3);
+    background: linear-gradient(45deg, #56458b, #20004b);
 }
