@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
     <!-- Bootstrap styles js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <!-- custom styles  -->
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" rel="stylesheet">
     <link href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -227,21 +228,21 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="link" href="/guru">
+                        <a class="link" href="/teacher">
                             <i class="ti-home"></i>
-                            <span>Manage Guru</span>
+                            <span>Data Guru</span>
                         </a>
                     </li>
                     <li>
                         <a class="main-menu has-dropdown" href="#">
                             <i class="ti-desktop"></i>
-                            <span>UI Elements</span>
+                            <span>Konten</span>
                         </a>
                         <ul class="sub-menu">
-                            <li><a class="link" href="element-ui.html"><span>Elements</span></a></li>
-                            <li><a class="link" href="element-accordion.html"><span>Accordion</span></a></li>
-                            <li><a class="link" href="element-tabs-collapse.html"><span>Tabs & Collapse</span></a></li>
-                            <li><a class="link" href="element-card.html"><span>Card</span></a></li>
+                            <li><a class="link" href="/news"><span>Berita</span></a></li>
+                            <li><a class="link" href="element-accordion.html"><span>Gallery</span></a></li>
+                            <li><a class="link" href="element-tabs-collapse.html"><span>Kepala Sekolah</span></a></li>
+                            <li><a class="link" href="element-card.html"><span>Osis</span></a></li>
                             <li><a class="link" href="element-button.html"><span>Buttons</span></a></li>
                             <li><a class="link" href="element-alert.html"><span>Alert</span></a></li>
                             <li><a class="link" href="element-themify-icons.html"><span>Themify Icons</span></a></li>
