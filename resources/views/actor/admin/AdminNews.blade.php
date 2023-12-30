@@ -50,12 +50,12 @@
                                 <div class="row">
                                     <div class="col-md-6 p-0">
                                         <button class="btn">
-                                            <i class="bi bi-trash3 text-danger"></i>
+                                            <i class="fa-solid fa-trash text-danger"></i>
                                         </button>
                                     </div>
                                     <div class="col-md-6 p-0">
                                         <button class="btn">
-                                            <i class="bi bi-pencil-square text-info"></i>
+                                            <i class="fa-solid fa-pen-to-square text-info"></i>
                                         </button>
                                     </div>
                             </td>
@@ -71,12 +71,12 @@
                                 <div class="row">
                                     <div class="col-md-6 p-0">
                                         <button class="btn">
-                                            <i class="bi bi-trash3 text-danger"></i>
+                                            <i class="fa-solid fa-trash text-danger"></i>
                                         </button>
                                     </div>
                                     <div class="col-md-6 p-0">
                                         <button class="btn">
-                                            <i class="bi bi-pencil-square text-info"></i>
+                                            <i class="fa-solid fa-pen-to-square text-info"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -100,6 +100,7 @@
                 <div class="row my-3">
                     <div class="col-md-6">
                         <div class="h-100 mt-2 rounded p-3 shadow"">
+                            <p class="fw-bold">Form Tambah Berita</p>
                             <form action="">
                                 <div class="mt-1">
                                     <div class="mb-2">
@@ -135,6 +136,7 @@
                                     </div>
                                 </div>
                             </form>
+                            <button class="btn btn-primary">Upload <i class="fa-solid fa-cloud-arrow-up"></i></button>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -146,15 +148,15 @@
                                         <input class="form-control" id="pendidikan" placeholder="Ex: Pegawai Negeri Sipil " type="text">
                                     </div>
                                     <div class="col-xl-3">
-                                        <button class="btn border-success shadow"><i class="bi bi-plus-square text-success"></i></button>
+                                        <button class="btn border-success shadow"><i class="fa-solid fa-plus text-success"></i></button>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-2 mt-4">
                                 <ol class="list-unstyled">
-                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">PNS <button class="btn"><i class="bi bi-trash3 text-danger"></i></button></li>
-                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">P3K <button class="btn"><i class="bi bi-trash3 text-danger"></i></button></li>
-                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">Honorer <button class="btn"><i class="bi bi-trash3 text-danger"></i></button></li>
+                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">PNS <button class="btn"><i class="fa-solid fa-trash text-danger"></i></button></li>
+                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">P3K <button class="btn"><i class="fa-solid fa-trash text-danger"></i></button></li>
+                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">Honorer <button class="btn"><i class="fa-solid fa-trash text-danger"></i></button></li>
                                 </ol>
                             </div>
                         </div>
@@ -164,17 +166,6 @@
         </div>
     </div>
 
-
-    </div>
-    </div>
-    </div>
-
-
-    <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
-    <script src="{{ asset('vendor/datatables.net/js/jquery.dataTables.min.js') }} "></script>
-    <script src="{{ asset('vendor/datatables.net-responsive/js/dataTables.responsive.min.js') }} "></script>
-    <script src="{{ asset('assets/js/page/datatables.js') }}"></script>
-
     <script>
         $('#deskripsi').summernote({
             placeholder: '',
@@ -182,6 +173,12 @@
             height: 300
         });
     </script>
+
+    <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/datatables.net/js/jquery.dataTables.min.js') }} "></script>
+    <script src="{{ asset('vendor/datatables.net-responsive/js/dataTables.responsive.min.js') }} "></script>
+    <script src="{{ asset('assets/js/page/datatables.js') }}"></script>
+
     <script>
         $('.date').datepicker({
             autoclose: true,

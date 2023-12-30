@@ -5,10 +5,6 @@
 @push('thispageonly')
     <link href="{{ asset('vendor/datatables.net-dt/css/jquery.dataTables.min.css') }}" rel="stylesheet" />
     <link href="{{ asset('vendor/datatables.net-responsive-dt/css/responsive.dataTables.min.css') }}" rel="stylesheet" />
-
-     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 @endpush
 
 @section('main-content')
@@ -20,7 +16,7 @@
             <div class="card-body">
                 <!-- Button trigger modal -->
                 <button class="btn border-primary text-primary mb-2 shadow" data-bs-target="#exampleModal" data-bs-toggle="modal" type="button">
-                    Tambah Data <i class="bi bi-plus-lg"></i>
+                    Tambah Data <i class="fa-solid fa-plus"></i>
                 </button>
 
                 <!-- Modal -->
@@ -126,12 +122,12 @@
                                 <div class="row">
                                     <div class="col-md-6 p-0">
                                         <button class="btn border-danger">
-                                            <i class="bi bi-trash3 text-danger"></i>
+                                            <i class="fa-solid fa-trash text-danger"></i>
                                         </button>
                                     </div>
                                     <div class="col-md-6 p-0">
                                         <button class="btn border-info">
-                                            <i class="bi bi-pencil-square text-info"></i>
+                                            <i class="fa-solid fa-pen-to-square text-info"></i>
                                         </button>
                                     </div>
                             </td>
@@ -150,12 +146,12 @@
                                 <div class="row">
                                     <div class="col-md-6 p-0">
                                         <button class="btn border-danger">
-                                            <i class="bi bi-trash3 text-danger"></i>
+                                            <i class="fa-solid fa-trash text-danger"></i>
                                         </button>
                                     </div>
                                     <div class="col-md-6 p-0">
                                         <button class="btn border-info">
-                                            <i class="bi bi-pencil-square text-info"></i>
+                                            <i class="fa-solid fa-pen-to-square text-info"></i>
                                         </button>
                                     </div>
                                 </div>
@@ -189,14 +185,14 @@
                                         <input class="form-control" id="pendidikan" placeholder="Ex: Waka Kurikulum" type="text">
                                     </div>
                                     <div class="col-xl-3">
-                                        <button class="btn border-success shadow"><i class="bi bi-plus-square text-success"></i></button>
+                                        <button class="btn border-success shadow"><i class="fa-solid fa-plus text-success"></i></button>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-2 mt-4">
                                 <ol class="list-unstyled">
-                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">waka Kurikulum<button class="btn"><i class="bi bi-trash3 text-danger"></i></button></li>
-                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">weka Kemahasiswaan <button class="btn"><i class="bi bi-trash3 text-danger"></i></button></li>
+                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">waka Kurikulum<button class="btn"><i class="fa-solid fa-trash text-danger"></i></button></li>
+                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">weka Kemahasiswaan <button class="btn"><i class="fa-solid fa-trash text-danger"></i></button></li>
                                 </ol>
                             </div>
                         </div>
@@ -210,15 +206,15 @@
                                         <input class="form-control" id="pendidikan" placeholder="Ex: Pegawai Negeri Sipil " type="text">
                                     </div>
                                     <div class="col-xl-3">
-                                        <button class="btn border-success shadow"><i class="bi bi-plus-square text-success"></i></button>
+                                        <button class="btn border-success shadow"><i class="fa-solid fa-plus text-success"></i></button>
                                     </div>
                                 </div>
                             </div>
                             <div class="mb-2 mt-4">
                                 <ol class="list-unstyled">
-                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">PNS <button class="btn"><i class="bi bi-trash3 text-danger"></i></button></li>
-                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">P3K <button class="btn"><i class="bi bi-trash3 text-danger"></i></button></li>
-                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">Honorer <button class="btn"><i class="bi bi-trash3 text-danger"></i></button></li>
+                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">PNS <button class="btn"><i class="fa-solid fa-trash text-danger"></i></button></li>
+                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">P3K <button class="btn"><i class="fa-solid fa-trash text-danger"></i></button></li>
+                                    <li class="border-bottom d-flex justify-content-between align-items-center p-0">Honorer <button class="btn"><i class="fa-solid fa-trash text-danger"></i></i></button></li>
                                 </ol>
                             </div>
                         </div>
@@ -227,27 +223,7 @@
             </div>
         </div>
     </div>
-    <div class="mb-2">
-        <label class="form-label" for="deskripsi">Deskripsi</label>
-        <textarea class="form-control" id="summernote" placeholder="Deskripsi Berita"></textarea>
-    </div>
 
-    <script>
-        $('#summernote').summernote({
-            placeholder: 'Hello stand alone ui',
-            tabsize: 2,
-            height: 120,
-            toolbar: [
-                ['style', ['style']],
-                ['font', ['bold', 'underline', 'clear']],
-                ['color', ['color']],
-                ['para', ['ul', 'ol', 'paragraph']],
-                ['table', ['table']],
-                ['insert', ['link', 'picture', 'video']],
-                ['view', ['fullscreen', 'codeview', 'help']]
-            ]
-        });
-    </script>
     <script src="{{ asset('vendor/jquery/dist/jquery.min.js') }}"></script>
     <script src="{{ asset('vendor/datatables.net/js/jquery.dataTables.min.js') }} "></script>
     <script src="{{ asset('vendor/datatables.net-responsive/js/dataTables.responsive.min.js') }} "></script>

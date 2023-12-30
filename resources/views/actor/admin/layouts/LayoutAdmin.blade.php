@@ -13,6 +13,8 @@
     <!-- Bootstrap styles js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" referrerpolicy="no-referrer" rel="stylesheet" />
+
     <!-- custom styles  -->
     <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" rel="stylesheet">
     <link href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -223,94 +225,64 @@
                 <ul>
                     <li class="active">
                         <a class="link" href="/admin">
-                            <i class="ti-home"></i>
+                            <i class="fa-solid fa-house-laptop"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
                     <li class="">
                         <a class="link" href="/teacher">
-                            <i class="ti-home"></i>
+                            <i class="fa-solid fa-chalkboard-user"></i>
                             <span>Data Guru</span>
                         </a>
                     </li>
+                    <li class="">
+                        <a class="link" href="">
+                            <i class="fa-solid fa-users-line"></i>
+                            <span>Data Siswa</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="link" href="/news">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <span>Data Berita</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="link" href="/profile">
+                            <i class="fa-regular fa-newspaper"></i>
+                            <span>Data Profile</span>
+                        </a>
+                    </li>
                     <li>
                         <a class="main-menu has-dropdown" href="#">
-                            <i class="ti-desktop"></i>
-                            <span>Konten</span>
+                            <i class="fa-solid fa-person-arrow-down-to-line"></i>
+                            <span>PPDB</span>
                         </a>
                         <ul class="sub-menu">
-                            <li><a class="link" href="/news"><span>Berita</span></a></li>
-                            <li><a class="link" href="element-accordion.html"><span>Gallery</span></a></li>
+                            <li><a class="link" href="element-tabs-collapse.html"><span>Data Pendaftaran</span></a></li>
+                            <li><a class="link" href="element-card.html"><span>Konten</span></a></li>
+                        </ul>
+                    </li>
+                    {{-- <li>
+                        <a class="main-menu has-dropdown" href="#">
+                            <i class="fa-solid fa-display"></i>
+                            <span>Provile</span>
+                        </a>
+                        <ul class="sub-menu">
                             <li><a class="link" href="element-tabs-collapse.html"><span>Kepala Sekolah</span></a></li>
                             <li><a class="link" href="element-card.html"><span>Osis</span></a></li>
-                            <li><a class="link" href="element-button.html"><span>Buttons</span></a></li>
-                            <li><a class="link" href="element-alert.html"><span>Alert</span></a></li>
-                            <li><a class="link" href="element-themify-icons.html"><span>Themify Icons</span></a></li>
-                            <li><a class="link" href="element-modal.html"><span>Modal</span></a></li>
+                            <li><a class="link" href="element-card.html"><span>Kontak & Socmed</span></a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li>
                         <a class="main-menu has-dropdown" href="#">
-                            <i class="ti-book"></i>
-                            <span>Form</span>
+                            <i class="fa-solid fa-photo-film"></i>
+                            <span>Gallery</span>
                         </a>
                         <ul class="sub-menu">
-                            <li><a class="link" href="form-element.html">
-                                    <span>Form Element</span></a>
-                            </li>
-                            <li><a class="link" href="form-datepicker.html">
-                                    <span>Datepicker</span></a>
-                            </li>
-                            <li><a class="link" href="form-select2.html">
-                                    <span>Select2</span></a>
-                            </li>
+                            <li><a class="link" href="element-accordion.html"><span>Foto</span></a></li>
+                            <li><a class="link" href="element-tabs-collapse.html"><span>Video</span></a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a class="main-menu has-dropdown" href="#">
-                            <i class="ti-notepad"></i>
-                            <span>Utilities</span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a class="link" href="error-404.html" target="_blank"><span>Error 404</span></a></li>
-                            <li><a class="link" href="error-403.html" target="_blank"><span>Error 403</span></a></li>
-                            <li><a class="link" href="error-500.html" target="_blank"><span>Error 500</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="main-menu has-dropdown" href="#">
-                            <i class="ti-layers-alt"></i>
-                            <span>Pages</span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a class="link" href="pages-blank.html"><span>Blank</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="main-menu has-dropdown" href="#">
-                            <i class="ti-hummer"></i>
-                            <span>Auth</span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a class="link" href="auth-login.html" target="_blank"><span>Login</span></a></li>
-                            <li><a class="link" href="auth-register.html" target="_blank"><span>Register</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="main-menu has-dropdown" href="#">
-                            <i class="ti-write"></i>
-                            <span>Tables</span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a class="link" href="table-basic.html"><span>Table Basic</span></a></li>
-                            <li><a class="link" href="table-datatables.html"><span>DataTables</span></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="link" href="charts.html">
-                            <i class="ti-bar-chart"></i>
-                            <span>Charts</span>
-                        </a>
                     </li>
                 </ul>
             </div>
