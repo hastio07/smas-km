@@ -1,6 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center"> <a href="https://github.com/hastio07/smas-km" target="_blank"> <img src="https://raw.githubusercontent.com/hastio07/smas-km/master/public/assets/image/logo.png"
+<p align="center"> <a href="https://github.com/hastio07/smas-km" target="_blank"> <img src="https://raw.githubusercontent.com/hastio07/smas-km/master/public/assets/image/logo.jpg"
 height="auto" width="200" alt="logo"></a></p>
 
 ## SMAS Kartikatama Kota Metro
