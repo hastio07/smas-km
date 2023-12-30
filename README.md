@@ -52,3 +52,10 @@ php artisan migrate --seed
 9. Jalankan server lokal dengan perintah:
 ```php
 php artisan serve
+```
+
+## Contributors
+
+<a href="https://github.com/hastio07/smas-km/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=hastio07/smas-km" />
+</a>
