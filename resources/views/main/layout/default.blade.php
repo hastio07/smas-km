@@ -65,11 +65,11 @@
                                         <a class="nav-link" href="/{{ $guard }}">{{ auth($guard)->user()->name }}</a>
                                     </li>
                                 @endauth
-                                @unless (auth($guard)->check())
+                                @guest
                                     <li class="nav-item">
-                                        <a class="btn bg-smas ms-3" href="/login/user">LOGIN</a>
+                                        <a class="btn bg-smas ms-3" href="/login/admin">LOGIN</a>
                                     </li>
-                                @endunless
+                                @endguest
                             </ul>
                         </div>
                     </div>

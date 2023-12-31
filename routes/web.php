@@ -30,13 +30,12 @@ Route::controller(MainController::class)->group(function () {
 });
 
 // Rute Authentication
-Route::controller(AuthController::class)->middleware(['guest:admin,teacher,student,user'])->group(function () {
+Route::controller(AuthController::class)->middleware(['guest:admin'])->group(function () {
     Route::get('login/admin', 'index')->name('admin.login'); // Halaman Admin Login
-    Route::get('login/user', 'index')->name('user.login'); // Halaman User Login
     Route::post('login', 'login')->name('login'); // Proses Login
 });
 // Rute After Authentication
-Route::controller(AuthController::class)->middleware(['auth:admin,teacher,student,user'])->group(function () {
+Route::controller(AuthController::class)->middleware(['auth:admin'])->group(function () {
     Route::controller(AdminController::class)->group(function () {
         Route::get('admin', 'index')->name('admin.dashboard'); // Admin Dashboard
     });

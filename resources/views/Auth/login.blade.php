@@ -9,7 +9,7 @@
             <div class="gap-3">
                 <div class="row">
                     <div class="col-sm-3 d-flex align-items-center justify-content-center">
-                        <img alt="..." class="img-thumbnail border-0" height="90" src="{{ asset('assets/image/logo.jpg')}}" width="90">
+                        <img alt="..." class="img-thumbnail border-0" height="90" src="{{ asset('assets/image/logo.jpg') }}" width="90">
                     </div>
                     <div class="col-sm-9">
                         <h4 class="mb-0 mt-3">SMAS Kartikatama</h4>
@@ -40,10 +40,6 @@
                         @if (url()->current() == route('admin.login'))
                             <label class="form-label text-muted" for="email" style="font-size: small">Email</label>
                             <input class="form-control" id="email" name="email" required type="email">
-                        @endif
-                        @if (url()->current() == route('user.login'))
-                            <label class="form-label text-muted" for="nisn" style="font-size: small">NISN/NISS</label>
-                            <input class="form-control" id="nisn" name="nisn" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*?)\..*/g, '$1');" required type="text">
                         @endif
                     </div>
                     <div class="mb-3">

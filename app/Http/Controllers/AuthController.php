@@ -17,7 +17,7 @@ class AuthController extends Controller
     {
         if (url()->previous() == route('admin.login')) {
             $rules = [
-                'email' => ['required', 'string'],
+                'email' => ['required', 'string', 'email'],
                 'password' => ['required', 'string', 'min:5'],
             ];
             $messages = [
@@ -31,28 +31,11 @@ class AuthController extends Controller
             $validator = Validator::make($request->all(), $rules, $messages, $cutomAttribute);
         }
 
-        if (url()->previous() == route('user.login')) {
-            $rules = [
-                'nisn' => ['required', 'numeric'],
-                'password' => ['required', 'string', 'min:5'],
-            ];
-            $messages = [
-                'nisn.numeric' => 'NSIN harus angka ordinal.',
-                'password.min' => ':attribute harus diisi minimal :min karakter.',
-                'required' => ':attribute wajib diisi.',
-            ];
-            $cutomAttribute = [
-                'nisn' => 'NSIN',
-                'password' => 'Kata sandi',
-            ];
-            $validator = Validator::make($request->all(), $rules, $messages, $cutomAttribute);
-        }
-
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
         }
         $credentials = $validator->validated();
-        $guards = ['admin', 'teacher', 'student', 'user'];
+        $guards = ['admin'];
 
         foreach ($guards as $guard) {
             try

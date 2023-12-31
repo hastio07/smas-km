@@ -11,4 +11,8 @@ class Role extends Model
 
     protected $fillable = ['id', 'role_name'];
 
+    public function admin()
+    {
+        return $this->hasOne(Admin::class, 'role_id', 'id');
+    }
 }
