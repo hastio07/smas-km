@@ -14,9 +14,13 @@ class MainController extends Controller
         return view('main.Sambutan');
     }
 
-    public function ppdb()
+    public function formppdb()
     {
-        return view('main.PPDB');
+        return view('main.FormPpdb');
+    }
+    public function mainppdb()
+    {
+        return view('main.MainPpdb');
     }
 
     public function profil()

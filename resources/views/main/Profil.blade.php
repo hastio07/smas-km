@@ -7,7 +7,6 @@
 @endpush
 
 @section('content')
-    @include('layouts.includes.carousel')
     <section>
         <div class="container mt-5">
             <div class="m-3 rounded p-3 shadow">

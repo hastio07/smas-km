@@ -10,6 +10,8 @@
         <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
         <!-- Boostrap icons -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css" rel="stylesheet">
+        <!-- font awesome icon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Bootstrap styles js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <!-- custom styles  -->
@@ -40,7 +42,7 @@
                                     <a aria-current="page" class="nav-link text-decoration-none text-dark position-relative active" href="/">HOME</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-decoration-none text-dark position-relative" href="/ppdb">PPDB</a>
+                                    <a class="nav-link text-decoration-none text-dark position-relative" href="/MainPpdb">PPDB</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link text-decoration-none text-dark position-relative" href="/profil">PROFIL</a>

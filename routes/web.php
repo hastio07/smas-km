@@ -23,9 +23,10 @@ use Illuminate\Support\Facades\Route;
 Route::controller(MainController::class)->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('/sambutan', 'sambutan');
-    Route::get('/ppdb', 'ppdb');
+    Route::get('/formppdb', 'formppdb');
     Route::get('/profil', 'profil');
     Route::get('/DetailGuru', 'detailguru');
+    Route::get('/MainPpdb', 'mainppdb');
 });
 
 // Rute Authentication

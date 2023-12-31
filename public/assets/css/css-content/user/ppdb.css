@@ -6,6 +6,16 @@
     border-radius: 10px;
 }
 
+.btn-smas {
+    background-color: #4a397e;
+    color: #fff;
+}
+
+.btn-smas:hover {
+    background-color: #7a68b1;
+    color: #fff;
+}
+
 /* css untuk progres bar */
 .progress-container {
     min-width: 100%;
@@ -88,11 +98,11 @@
         transform: scale(0.5);
     }
 
-        to {
-            opacity: 1;
-            transform: scale(1);
-        }
-        }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
 
 .center-element {
     animation: fadeIn 1s ease-out;
@@ -104,4 +114,13 @@
     border: 2px solid #c5c5c5;
     background-color: #ebebeb;
     border-style: dashed;
+}
+
+
+/* Main PPDB CSS */
+.line {
+    width: 300px;
+    height: 5px;
+    background-color: #333;
+    border-radius: 10px;
 }
