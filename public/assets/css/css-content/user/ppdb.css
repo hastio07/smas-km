@@ -124,3 +124,71 @@
     background-color: #333;
     border-radius: 10px;
 }
+
+.ppdb-news {
+    max-height: 600px;
+}
+
+.ppdb-news .card-img-overlay {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease, width 0.5s ease;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.ppdb-news:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.ppdb-news .card-img {
+    transition: filter 1s ease;
+    width: 100%;
+}
+
+.ppdb-news:hover .card-img {
+    filter: brightness(20%);
+}
+
+@media (max-width: 768px) {
+    .ppdb-news .card-img-overlay {
+        padding: 10px;
+    }
+}
+
+/* Style untuk layar besar (ukuran desktop) */
+.card-title,
+.card-text,
+.card-text small {
+    display: block;
+}
+
+/* Style untuk layar kecil (ponsel) */
+@media (max-width: 575px) {
+
+    .card-title,
+    .card-text,
+    .card-text small {
+        display: none;
+        /* Menyembunyikan elemen pada layar ponsel */
+    }
+
+    .ppdb-news.btn {
+        display: block;
+        /* Menampilkan tombol pada layar ponsel */
+    }
+
+    .ppdb-news.card-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+}
