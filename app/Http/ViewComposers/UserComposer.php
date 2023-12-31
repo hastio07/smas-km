@@ -8,7 +8,7 @@ class UserComposer
 {
     public function compose(View $view)
     {
-        $guards = ['admin', 'teacher', 'student', 'user'];
+        $guards = ['admin'];
         $guardSet = false;
 
         foreach ($guards as $guard) {
@@ -26,10 +26,7 @@ class UserComposer
 
         }
         if (!$guardSet) {
-            $view->with('guard', 'user'); // Tetapkan default guard jika tidak ada guard yang diatur
+            $view->with('guard', 'admin'); // Tetapkan default guard jika tidak ada guard yang diatur
         }
-
-        // dd($view->with('guard', auth('admin')->user()));
-        // $view->with('guard', 'admin');
     }
 }
