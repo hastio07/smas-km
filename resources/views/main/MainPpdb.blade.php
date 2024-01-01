@@ -9,7 +9,7 @@
 
 @section('content')
     <section class="mt-3">
-        <div class="mb-3">
+        <div class="img">
             <img alt="upload baner ppdb" class="img-fluid" src="{{ asset('assets/image/PPDB/baner.jpg') }}" style="max-width:100%; height:auto;">
         </div>
         <div class="container">
@@ -23,16 +23,40 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum obcaecati laudantium, neque cum, nemo commodi eligendi dolores temporibus eius accusantium dolor, fugiat harum vitae! Ex iure itaque natus maiores atque!</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nobis explicabo itaque illo similique corporis sapiente accusamus laborum nisi doloremque a consequatur sit pariatur, eius animi voluptatum suscipit placeat fugit.</p>
                 </div>
+                <div class="pt-5 text-center">
+                    <p class="display-4 fw-bold" style="color: #4a397e">Kontak PPDB</p>
+                    <div class="justify-content-center align-items-center d-flex mt-5 text-white">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h4 class="bg-warning rounded-4 contact-ppdb p-3">
+                                        <i class="fa-solid fa-tty"></i> 081256787676
+                                    </h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4 class="bg-warning rounded-4 contact-ppdb p-3">
+                                        <i class="fa-solid fa-envelope"></i> ppdb.smaskm@gmail.com
+                                    </h4>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4 class="bg-warning rounded-4 contact-ppdb p-3">
+                                        <i class="fa-brands fa-whatsapp"></i> 087865437865
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <a class="btn btn-smas rounded-4 justify-content-center align-items-center d-flex border-0 py-3 text-center shadow" href="/formppdb">
                 <h4 class="mb-0"> <i class="fa-solid fa-user-pen"></i> Daftarkan Diri Anda Disini </h4>
             </a>
-            <div class="justify-content-center align-items-center d-flex my-3">
-                <h5 class="fw-bold mb-0" style="color: #4a397e">Atau</h5>
-            </div>
-            <a class="btn btn-smas rounded-4 justify-content-center align-items-center d-flex border-0 py-3 text-center shadow" href="/formppdb">
-                <h4 class="mb-0">Cek Hasil Ujian Anda Disini <i class="fa-solid fa-magnifying-glass-arrow-right"></i></h4>
-            </a>
+            {{-- <div class="justify-content-center align-items-center d-flex my-3">
+                    <h5 class="fw-bold mb-0" style="color: #4a397e">Atau</h5>
+                </div>
+                <a class="btn btn-smas rounded-4 justify-content-center align-items-center d-flex border-0 py-3 text-center shadow" href="/formppdb">
+                    <h4 class="mb-0">Cek Hasil Ujian Anda Disini <i class="fa-solid fa-magnifying-glass-arrow-right"></i></h4>
+                </a> --}}
             <div class="row my-5 mb-3">
                 <div class="col-md-6">
                     <div class="rounded-4 h-100 d-flex justify-content-center align-items-center p-3 shadow" data-aos-duration="2000" data-aos="fade-up" style="border-top: 10px solid #4a397e">
@@ -139,7 +163,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

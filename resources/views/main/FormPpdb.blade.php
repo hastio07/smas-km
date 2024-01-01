@@ -11,68 +11,55 @@
     <section style="padding: 70px 0;">
         <div class="container rounded shadow">
             <div class="my-3 p-3">
-                <div class="progress-container d-flex justify-content-between position-relative container my-5">
-                    <div class="progress position-absolute" id="progress"></div>
-                    <div class="circle d-flex align-items-center justify-content-center active bg-primary-emphasis"><i class="bi bi-person-fill"></i></div>
-                    <div class="circle d-flex align-items-center justify-content-center bg-smas shadow"><i class="bi bi-arrow-clockwise"></i></div>
-                    <div class="circle d-flex align-items-center justify-content-center bg-smas shadow"><i class="bi bi-file-earmark-break"></i></div>
-                    <div class="circle d-flex align-items-center justify-content-center bg-smas shadow"><i class="bi bi-check2-all"></i></div>
-                </div>
                 <div class="output-message active mt-4" id="pesan">
-                    <h3>Formulir Penerimaan Siswa Baru</h3>
-                    <h5>SMAS Kartikatama Kota Metro</h5>
+                    <h3 class="display-4" style="color: #4a397e">Formulir Penerimaan Siswa Baru</h3>
+                    <h5 style="color: #2d2150">SMAS Kartikatama Kota Metro</h5>
+                    <div class="line"></div>
                     <form class="mt-4">
-                        <div class="bg-danger my-4 rounded p-1 ps-3 text-white shadow">
+                        <div class="tolak text-muted my-4 rounded p-3 ps-3 shadow">
                             <div class="d-flex gap-2">
                                 <i class="bi bi-megaphone"></i>
                                 <p class="fw-bold">Penting !</p>
                             </div>
-                            <p class="mb-0">Pastika data yang anda masukan sesuai dengan sebagaimana adanya, jika terjadi kesalahan maka diluar tanggung jawab pihak PPDB SMAS Kartikatama Kota Metro</p>
+                            <p>Pastika data yang anda masukan sesuai dengan sebagaimana adanya dan pastikan tidak ada kesalahan input, jika terjadi kesalahan maka diluar tanggung jawab pihak PPDB SMAS Kartikatama Kota Metro</p>
+                            <p class="fst-italic mb-0">*Pastikan Email yang anda gunakan selalu aktif, karena hasil pendaftaran akan dikirimkan ke Email yang didaftarkan</p>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
-                                <img alt="..." class="img-thumbnail d-block mx-auto mb-3" src="{{ asset('assets/image/siswa.jpg') }}" style="max-width: 170px; max-height: 190px;">
+                                {{-- <img alt="..." class="img-thumbnail d-block mx-auto mb-3" src="{{ asset('assets/image/siswa.jpg') }}" style="max-width: 170px; max-height: 190px;"> --}}
                                 <div class="mb-3">
-                                    <label class="form-label" for="foto">Upload Foto</label>
-                                    <input class="form-control" id="foto" type="file">
+                                    <label class="fw-bold text-muted mb-1" for="foto">Foto 3x4</label>
+                                    <p class="fst-italic text-danger mb-0" style="font-size:small;">*Batas ukuran file 600Kb</p>
+                                    <div class="inpt-doc d-flex justify-content-between align-items-center mb-4 rounded p-3" id="foto">
+                                        <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
+                                            <i class="bi bi-file-earmark-minus-fill text-muted"></i>
+                                        </div>
+                                        <p class="mb-0 ms-3" id="uploadStatus1">Dokumen Belum Diupload</p>
+                                        <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
+                                            <input class="form-control-file" id="fileInput1" onchange="updateUploadStatus(1)" style="display: none;" type="file">
+                                            <label class="btn btn-secondary mb-0" for="fileInput1">Upload</label>
+                                        </form>
+                                    </div>
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="nama">Nama</label>
-                                    <input class="form-control" id="nama" placeholder="Nama Lengkap" type="text">
+                                    <input class="form-control" id="name" placeholder="Nama Lengkap" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="ttl">Tanggal Lahir</label>
-                                    <input class="form-control" id="ttl" placeholder="dd-mm-yy" type="password">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="nisn">NISN</label>
-                                    <input class="form-control" id="nisn" placeholder="NISN" type="number">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="alamat">Alamat</label>
-                                    <input class="form-control" id="alamat" placeholder="Alamat" type="text">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label" for="asal">Asal Sekolah</label>
-                                    <input class="form-control" id="alamat" placeholder="asal" type="text">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label class="form-label" for="jenis">Jenis Pendaftaran</label>
-                                    <select class="form-select" id="jenis">
-                                        <option selected>-- Pilih Jenis Pendaftaran --</option>
-                                        <option value="1">Siswa Baru</option>
-                                        <option value="2">Siswa Pindahan</option>
+                                    <label class="form-label" for="kelamin">Jenis Kelamin</label>
+                                    <select class="form-select" id="kelamin">
+                                        <option selected>-- Pilih Jenis Kelamin --</option>
+                                        <option value="1">Laki-Laki</option>
+                                        <option value="2">Perempuan</option>
                                     </select>
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="jenis">Jurusan</label>
-                                    <select class="form-select" id="jenis">
-                                        <option selected>-- Pilih Jurusan</option>
-                                        <option value="1">IPA</option>
-                                        <option value="2">IPS</option>
-                                    </select>
+                                    <label class="form-label" for="tl">Tempat Lahir</label>
+                                    <input class="form-control" id="tl" placeholder="Jakarta" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="tgl-lhr">Tanggal Lahir</label>
+                                    <input class="form-control" id="tgl-lhr" placeholder="dd-mm-yy" type="text">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="agama">Agama</label>
@@ -85,31 +72,112 @@
                                     </select>
                                 </div>
                                 <div class="mb-3">
+                                    <label class="form-label" for="kb-khusus">Kebutuhan Khusus</label>
+                                    <p class="fst-italic text-danger mb-0" style="font-size:small;">*Tuliskan kebutuhan khusus siswa, jika tidak ada tuliskan "TIDAK ADA"</p>
+                                    <input class="form-control" id="kb-khusus" placeholder="Kebutuhan Khusus" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="alamat">Alamat</label>
+                                    <p class="fst-italic text-danger mb-0" style="font-size:small;">*Tuliskan alamat secara lengkap dan jelas</p>
+                                    <textarea class="form-control" id="alamat" placeholder="Jl. A. Yani No.283, Kebonjati, Kec. Cikole, Kota Sukabumi, Jawa Barat 43111" rows="4"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="tlp-siswa">No. Telephone Siswa</label>
+                                    <input class="form-control" id="tlp-siswa" placeholder="No. Telephone/WA" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="tlp-siswa">Email</label>
+                                    <p class="fst-italic text-danger mb-0" style="font-size:small;">*Pastikan penulisan e-mail tidak salah dan pastikan email aktif</p>
+                                    <input class="form-control" id="tlp-siswa" placeholder="email@gmail.com" type="email">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="asal">Asal Sekolah</label>
+                                    <input class="form-control" id="alamat" placeholder="asal" type="text">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label" for="tlp-ortu">No. Telephone Orang Tua</label>
+                                    <input class="form-control" id="tlp-ortu" placeholder="No. Telephone/WA" type="text">
+                                </div>
+                                <div class="mb-3">
                                     <label class="form-label" for="ayah">Nama Ayah</label>
                                     <input class="form-control" id="ayah" placeholder="Nama Ayah" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="pd-ayah">Pendidikan Ayah</label>
+                                    <p class="fst-italic text-danger mb-0" style="font-size:small;">*Tuliskan pendidikan terakhir</p>
+                                    <input class="form-control" id="pd-ayah" placeholder="Pendidikan Ayah" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="pkj-ayah">Pekerjaan Ayah</label>
+                                    <input class="form-control" id="pkj-ayah" placeholder="Pekerjaan Ayah" type="text">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="hasil_ayh">Penghasilan Ayah</label>
                                     <input class="form-control" id="hasil_ayh" placeholder="Pengasilan Ayah" type="text">
                                 </div>
                                 <div class="mb-3">
+                                    <label class="form-label" for="ayh-khusus">Kebutuhan Khusus Ayah</label>
+                                    <p class="fst-italic text-danger mb-0" style="font-size:small;">*Tuliskan kebutuhan khusus ayah, jika tidak ada tuliskan "TIDAK ADA"</p>
+                                    <input class="form-control" id="ayh-khusus" placeholder="Kebutuhan Khusus" type="text">
+                                </div>
+                                <div class="mb-3">
                                     <label class="form-label" for="ibu">Nama Ibu</label>
                                     <input class="form-control" id="ibu" placeholder="Nama Ibu" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="pd-ayah">Pendidikan Ibu</label>
+                                    <p class="fst-italic text-danger mb-0" style="font-size:small;">*Tuliskan pendidikan terakhir</p>
+                                    <input class="form-control" id="pd-ayah" placeholder="Pendidikan Ibu" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label" for="pkj-ibu">Pekerjaan Ibu</label>
+                                    <input class="form-control" id="pkj-ibu" placeholder="Pekerjaan Ibu" type="text">
                                 </div>
                                 <div class="mb-3">
                                     <label class="form-label" for="hasil_ibu">Penghasilan Ibu</label>
                                     <input class="form-control" id="hasil_ibu" placeholder="Penghasilan Ibu" type="text">
                                 </div>
                                 <div class="mb-3">
-                                    <label class="form-label" for="telephone">No. Telephone/WA</label>
-                                    <input class="form-control" id="telephone" placeholder="No. Telephone/WA" type="text">
+                                    <label class="form-label" for="ibu-khusus">Kebutuhan Khusus Ibu</label>
+                                    <p class="fst-italic text-danger mb-0" style="font-size:small;">*Tuliskan kebutuhan khusus ayah, jika tidak ada tuliskan "TIDAK ADA"</p>
+                                    <input class="form-control" id="ibu-khusus" placeholder="Kebutuhan Khusus" type="text">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="fw-bold text-muted mb-1" for="skhu">Surat Keterangan Hasil Ujian(SKHU)</label>
+                                    <div class="inpt-doc d-flex justify-content-between align-items-center mb-3 rounded p-3" id="skhu">
+                                        <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
+                                            <i class="bi bi-file-earmark-minus-fill text-muted"></i>
+                                        </div>
+                                        <p class="mb-0 ms-3" id="uploadStatus2">Dokumen Belum Diupload</p>
+                                        <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
+                                            <input class="form-control-file" id="fileInput2" onchange="updateUploadStatus(2)" style="display: none;" type="file">
+                                            <label class="btn btn-secondary mb-0 text-white" for="fileInput2">Upload</label>
+                                        </form>
+                                    </div>
+                                </div>
+                                <label class="fw-bold text-muted mb-1" for="akte">Akte Kelahiran</label>
+                                <div class="inpt-doc d-flex justify-content-between align-items-center mb-3 rounded p-3" id="akte">
+                                    <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
+                                        <i class="bi bi-file-earmark-minus-fill text-muted"></i>
+                                    </div>
+                                    <p class="mb-0 ms-3" id="uploadStatus3">Dokumen Belum Diupload</p>
+                                    <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
+                                        <input class="form-control-file" id="fileInput3" onchange="updateUploadStatus(3)" style="display: none;" type="file">
+                                        <label class="btn btn-secondary mb-0 text-white" for="fileInput3">Upload</label>
+                                    </form>
                                 </div>
                             </div>
                         </div>
 
                     </form>
+                    <a class="btn btn-smas rounded-4 justify-content-center align-items-center d-flex mt-4 border-0 py-2 text-center shadow" id="btnDaftar">
+                        <h4 class="mb-0"> Daftar <i class="fa-solid fa-user-pen"></i></h4>
+                    </a>
                 </div>
-                <div class="output-message my-5" id="pesan2">
+                {{-- pesan dan card cetak kartu peserta --}}
+                {{-- <div class="output-message my-5" id="pesan2">
                     <div class="proses text-muted gap-2 rounded p-3 shadow">
                         <i class="bi bi-arrow-clockwise fw-bold"></i> <span class="fw-bold">Sedang Proses</span>
                         <p class="mb-0 mt-2">Pendaftaran anda sedang diproses, harap menunggu pengumuman berikutnya, pengumuman akan diberitahukan melalui halaman ini atau bisa cek E-mail yang terdaftar</p>
@@ -125,52 +193,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="output-message" id="pesan3">
-                    <div class="bg-danger my-4 rounded p-1 ps-3 text-white shadow">
-                        <div class="d-flex gap-2">
-                            <i class="bi bi-megaphone"></i>
-                            <p class="fw-bold">Penting !</p>
-                        </div>
-                        <p class="mb-0">Pastikan berkas yang anda upload sesuai dengan sebagaimana adanya, jika terjadi kesalahan maka diluar tanggung jawab pihak PPDB SMAS Kartikatama Kota Metro</p>
-                    </div>
-
-                    <label class="fw-bold text-muted mb-1" for="foto">Foto 3x4</label>
-                    <div class="inpt-doc d-flex justify-content-between align-items-center mb-4 rounded p-3" id="foto">
-                        <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
-                            <i class="bi bi-file-earmark-minus-fill text-muted"></i>
-                        </div>
-                        <p class="mb-0 ms-3" id="uploadStatus1">Dokumen Belum Diupload</p>
-                        <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
-                            <input class="form-control-file" id="fileInput1" onchange="updateUploadStatus(1)" style="display: none;" type="file">
-                            <label class="btn btn-secondary mb-0" for="fileInput1">Upload</label>
-                        </form>
-                    </div>
-
-                    <label class="fw-bold text-muted mb-1" for="ijazah">Ijazah/Surat Keterangan Lulus</label>
-                    <div class="inpt-doc d-flex justify-content-between align-items-center mb-3 rounded p-3" id="ijazah">
-                        <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
-                            <i class="bi bi-file-earmark-minus-fill text-muted"></i>
-                        </div>
-                        <p class="mb-0 ms-3" id="uploadStatus2">Dokumen Belum Diupload</p>
-                        <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
-                            <input class="form-control-file" id="fileInput2" onchange="updateUploadStatus(2)" style="display: none;" type="file">
-                            <label class="btn btn-secondary mb-0 text-white" for="fileInput2">Upload</label>
-                        </form>
-                    </div>
-
-                    <label class="fw-bold text-muted mb-1" for="akte">Akte Kelahiran</label>
-                    <div class="inpt-doc d-flex justify-content-between align-items-center mb-3 rounded p-3" id="akte">
-                        <div class="bg-secondary d-flex justify-content-center align-items-center" style="height: 30px; width:30px; border-radius: 50%;">
-                            <i class="bi bi-file-earmark-minus-fill text-muted"></i>
-                        </div>
-                        <p class="mb-0 ms-3" id="uploadStatus3">Dokumen Belum Diupload</p>
-                        <form action="#" class="d-flex align-items-center" enctype="multipart/form-data" method="post">
-                            <input class="form-control-file" id="fileInput3" onchange="updateUploadStatus(3)" style="display: none;" type="file">
-                            <label class="btn btn-secondary mb-0 text-white" for="fileInput3">Upload</label>
-                        </form>
-                    </div>
-                </div>
-                <div class="output-message" id="pesan4">
+                <div class="output-message">
                     <div class="my-4 gap-2 rounded p-3 text-center">
                         <div class="container-fluid">
                             <div class="row">
@@ -237,77 +260,12 @@
                             <button class="btn btn-success bg-smas mt-4">Cetak Kartu Ujian <i class="bi bi-printer"></i></button>
                         </div>
                     </div>
-
-                </div>
-                <div class="row mt-4">
-                    <div class="col">
-                        <button class="btn bg-smas" disabled id="prev"><i class="bi bi-arrow-left"></i> Prev</button>
-                    </div>
-                    <div class="col text-end">
-                        <button class="btn bg-smas" id="next">Next <i class="bi bi-arrow-right"></i></button>
-                    </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>
-@endsection
 
-@push('scripts')
-    <!-- Sertakan jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Sertakan SweetAlert JS -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script>
-        // bring elements from the DOM
-        const progress = document.getElementById("progress");
-        const prev = document.getElementById("prev");
-        const next = document.getElementById("next");
-        const circles = document.querySelectorAll(".circle");
-        const outputMessages = document.querySelectorAll(".output-message");
-
-        let currentActive = 1;
-
-        next.addEventListener("click", () => {
-            if (currentActive < circles.length) {
-                currentActive++;
-                update();
-            }
-        });
-
-        prev.addEventListener("click", () => {
-            if (currentActive > 1) {
-                currentActive--;
-                update();
-            }
-        });
-
-        function update() {
-            const progressWidth = ((currentActive - 1) / (circles.length - 1)) * 100 + "%";
-            progress.style.width = progressWidth;
-
-            circles.forEach((circle, ind) => {
-                if (ind < currentActive) {
-                    circle.classList.add("active");
-                } else {
-                    circle.classList.remove("active");
-                }
-            });
-
-            outputMessages.forEach((pesan, ind) => {
-                if (ind === currentActive - 1) {
-                    pesan.classList.add("active");
-                } else {
-                    pesan.classList.remove("active");
-                }
-            });
-
-            prev.disabled = currentActive === 1;
-            next.disabled = currentActive === circles.length;
-        }
-
-        // Inisialisasi tampilan awal
-        update();
-    </script>
     <script>
         function updateUploadStatus(formNumber) {
             const fileInput = document.getElementById(`fileInput${formNumber}`);
@@ -320,16 +278,31 @@
             }
         }
     </script>
+
     <script>
-        $(document).ready(function() {
-            // Tambahkan event click pada tombol "Next"
-            $('#next').click(function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Temukan elemen tombol
+            var btnDaftar = document.getElementById('btnDaftar');
+
+            // Tambahkan event listener untuk menangani klik tombol
+            btnDaftar.addEventListener('click', function() {
+                // Tampilkan pesan konfirmasi menggunakan SweetAlert
                 Swal.fire({
-                    title: "Selamat",
-                    text: "Anda Behasil Melaju Ketahap Selanjutnya",
-                    icon: "success"
+                    title: 'Apakah Anda Yakin?',
+                    text: 'Pastikan Email yang digunakan selalu aktif, karena hasil pendaftaran akan dikirimkan ke Email',
+                    icon: 'question',
+                    showCancelButton: true,
+                    confirmButtonText: 'Ya, Saya Yakin!',
+                    cancelButtonText: 'Tidak, Batal',
+                }).then((result) => {
+                    // Jika pengguna mengklik "Ya, Saya Yakin!"
+                    if (result.isConfirmed) {
+                        // Tambahkan logika atau kode yang perlu dijalankan jika dikonfirmasi
+                        // Misalnya, pindahkan pengguna ke halaman pendaftaran
+                        window.location.href = '/MainPpdb';
+                    }
                 });
             });
         });
     </script>
-@endpush
+@endsection
