@@ -1,4 +1,4 @@
-.@extends('main.layout.default')
+@extends('main.layout.default')
 
 @section('title', 'Visi & Misi')
 
@@ -10,11 +10,12 @@
     <div class="container">
         <div class="m-3 rounded p-3">
             <h5 class="text-center">Visi dan Misi</h5>
-            <div class="mt-5">
+            <div class="my-5">
                 <h5 class="fw-bold">Visi</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eligendi! Recusandae veniam quasi rerum quaerat nobis eius necessitatibus iste suscipit sint repudiandae officia, possimus molestiae neque repellat officiis quisquam omnis.</p>
             </div>
-            <div class="mt-5">
+            <hr>
+            <div class="my-5">
                 <h5 class="fw-bold">Misi</h5>
                 <ol class="mt-3">
                     <li>Mengembangkan potensi siswa dalam bidang akademis, seni, dan olahraga.</li>

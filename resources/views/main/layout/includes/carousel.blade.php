@@ -1,4 +1,4 @@
-<div class="carousel slide mt-3" id="carouselAll">
+<div class="carousel carousel-global slide mt-3" id="carouselAll">
     <div class="carousel-indicators" id="carousel-indicators"></div>
     <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="5000">

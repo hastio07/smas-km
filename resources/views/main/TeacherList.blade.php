@@ -9,11 +9,11 @@
 @extends('main.layout.includes.carousel')
 @section('content')
     <section>
-        <div class="container" style="padding-bottom: 70px;">
-            <div class="m-3 rounded p-3 shadow">
-                <h3>Guru dan Karyawan</h3>
+        <div class="container mt-4">
+            <div class="m-3 rounded p-3">
+                <h5>Guru dan Staf</h5>
                 <div class="smooth-line"></div>
-                <div class="mt-3">
+                <div class="mt-5">
                     <h5 class="fw-bold"><i class="fa-solid fa-person-chalkboard"></i> Guru</h5>
                     <div class="row">
                         <div class="container">
@@ -33,7 +33,7 @@
                             </div>
                         </div>
                     </div>
-                    <h5 class="fw-bold mt-4"><i class="fa-solid fa-person-booth"></i> Karyawan</h5>
+                    <h5 class="fw-bold mt-4"><i class="fa-solid fa-person-booth"></i> Staf</h5>
                     <div class="row">
                         <div class="container">
                             <div class="row">
