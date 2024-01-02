@@ -28,18 +28,18 @@
                 <div class="container-fluid container">
                     <a class="navbar-brand" href="/">
                         <div class="d-flex align-items-center gap-3">
-                            <img alt="Logo" class="d-inline-block align-text-top" height="60" src="{{ asset('assets/image/logo.jpg') }}" width="60">
-                            <div class="name-sch ml-2">
+                            <img alt="Logo" class="d-inline-block align-text-top" height="60" src="{{ asset('assets/image/logo.jpg') }}" style="border-radius: 50%;" width="60">
+                            <div class="name-sch ml-2" style="color:#221a3a">
                                 <h5 class="fw-bold mb-0">SMAS Kartikatama</h5>
                                 <p class="mb-0">Kota Metro</p>
                             </div>
                         </div>
                     </a>
                     <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler border-0" data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
-                        <span class="navbar-toggler-icon"></span>
+                        <h3 class="text-smas mb-0"><i class="fa-solid fa-arrow-down-short-wide"></i></h3>
                     </button>
                     <div class="navbar-collapse collapse text-center" id="navbarNavDropdown">
-                        <ul class="navbar-nav d-flex align-items-center ms-auto">
+                        <ul class="navbar-nav d-flex align-items-center fw-bolder ms-auto">
                             <li class="nav-item position-relative">
                                 <a aria-current="page" class="nav-link text-decoration-none text-dark position-relative active" href="/">Home</a>
                             </li>
@@ -54,7 +54,7 @@
                                     <li><a class="dropdown-item text-decoration-none text-dark" href="/History">Sejarah</a></li>
                                     <li><a class="dropdown-item text-decoration-none text-dark" href="/VisiMisi">Visi & Misi</a></li>
                                     <li><a class="dropdown-item text-decoration-none text-dark" href="/OrgStructure">Struktur Organisasi</a></li>
-                                    <li><a class="dropdown-item text-decoration-none text-dark" href="/TeacherList">Data Guru</a></li>
+                                    <li><a class="dropdown-item text-decoration-none text-dark" href="/TeacherList">Guru & Staff</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -93,7 +93,7 @@
                     <div class="row">
                         <div class="col-xl-4 mt-4">
                             <div class="d-flex gap-3">
-                                <img alt="..." class="img-thumbnail" height="90" src="{{ asset('assets/image/logo.jpg') }}" width="90">
+                                <img alt="..." class="img-thumbnail p-0" height="90" src="{{ asset('assets/image/logo.jpg') }}" style="border-radius: 50%;" width="90">
                                 <div>
                                     <h5 class="underline-animation">SMAS 1 Kartikatama</h5>
                                 </div>
