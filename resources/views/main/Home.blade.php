@@ -42,7 +42,7 @@
                 <div class="col-md-8">
                     <p>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <a href="/sambutan">
-                        <button class="btn bg-smas">Baca Selengkapnya</button>
+                        <button class="btn btn-smas">Baca Selengkapnya</button>
                     </a>
                 </div>
             </div>
@@ -126,7 +126,7 @@
                     <h3 class="fw-bold">Lorem Ipsum!</h3>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <a href="/NewsDetails">
-                        <button class="btn bg-smas">Selengkapnya</button>
+                        <button class="btn btn-smas">Selengkapnya</button>
                     </a>
                 </div>
                 <div class="col-md-4 ord d-flex justify-content-center align-items-center mt-2">
