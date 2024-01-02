@@ -27,6 +27,8 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/profil', 'profil');
     Route::get('/DetailGuru', 'detailguru');
     Route::get('/MainPpdb', 'mainppdb');
+    Route::get('/NewsDetails', 'newsdetails');
+
 });
 
 // Rute Authentication
