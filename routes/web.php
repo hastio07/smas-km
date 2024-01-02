@@ -28,28 +28,32 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/DetailGuru', 'detailguru');
     Route::get('/MainPpdb', 'mainppdb');
     Route::get('/NewsDetails', 'newsdetails');
-
+    Route::get('/TeacherList', 'teacherlist');
 });
 
 // Rute Authentication
-Route::controller(AuthController::class)->middleware(['guest:admin'])->group(function () {
-    Route::get('login/admin', 'index')->name('admin.login'); // Halaman Admin Login
-    Route::post('login', 'login')->name('login'); // Proses Login
-});
+Route::controller(AuthController::class)
+    ->middleware(['guest:admin'])
+    ->group(function () {
+        Route::get('login/admin', 'index')->name('admin.login'); // Halaman Admin Login
+        Route::post('login', 'login')->name('login'); // Proses Login
+    });
 // Rute After Authentication
-Route::controller(AuthController::class)->middleware(['auth:admin'])->group(function () {
-    Route::controller(AdminController::class)->group(function () {
-        Route::get('admin', 'index')->name('admin.dashboard'); // Admin Dashboard
-    });
-    Route::controller(TeacherController::class)->group(function () {
-        Route::get('teacher', 'index')->name('admin.adminteacher'); // Admin Dashboard
-    });
-    Route::controller(NewsController::class)->group(function () {
-        Route::get('news', 'index')->name('admin.adminnews'); // Admin Dashboard
-    });
-    Route::controller(ProfileController::class)->group(function () {
-        Route::get('profile', 'index')->name('admin.adminprofile'); // Admin Dashboard
-    });
+Route::controller(AuthController::class)
+    ->middleware(['auth:admin'])
+    ->group(function () {
+        Route::controller(AdminController::class)->group(function () {
+            Route::get('admin', 'index')->name('admin.dashboard'); // Admin Dashboard
+        });
+        Route::controller(TeacherController::class)->group(function () {
+            Route::get('teacher', 'index')->name('admin.adminteacher'); // Admin Dashboard
+        });
+        Route::controller(NewsController::class)->group(function () {
+            Route::get('news', 'index')->name('admin.adminnews'); // Admin Dashboard
+        });
+        Route::controller(ProfileController::class)->group(function () {
+            Route::get('profile', 'index')->name('admin.adminprofile'); // Admin Dashboard
+        });
 
-    Route::post('logout', 'logout')->name('logout'); // Proses Logout
-});
+        Route::post('logout', 'logout')->name('logout'); // Proses Logout
+    });
