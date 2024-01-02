@@ -36,4 +36,8 @@ class MainController extends Controller
     {
         return view('main.NewsDetails');
     }
+    public function teacherlist()
+    {
+        return view('main.TeacherList');
+    }
 }
