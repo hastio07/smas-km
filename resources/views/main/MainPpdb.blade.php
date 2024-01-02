@@ -4,7 +4,6 @@
 
 @push('styles')
     <link href="{{ asset('assets/css/css-content/user/ppdb.css') }}" rel="stylesheet">
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 @endpush
 
 @section('content')
@@ -164,8 +163,4 @@
             </div>
         </div>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 @endsection

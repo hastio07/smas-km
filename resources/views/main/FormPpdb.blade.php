@@ -8,7 +8,7 @@
 @endpush
 
 @section('content')
-    <section style="padding: 70px 0;">
+    <section class="pt-3">
         <div class="container rounded shadow">
             <div class="my-3 p-3">
                 <div class="output-message active mt-4" id="pesan">
@@ -17,12 +17,10 @@
                     <div class="line"></div>
                     <form class="mt-4">
                         <div class="tolak text-muted my-4 rounded p-3 ps-3 shadow">
-                            <div class="d-flex gap-2">
-                                <i class="bi bi-megaphone"></i>
-                                <p class="fw-bold">Penting !</p>
-                            </div>
+                            <h5 class="fw-bold mb-2"><i class="fa-solid fa-triangle-exclamation"></i> Penting !</h5>
                             <p>Pastika data yang anda masukan sesuai dengan sebagaimana adanya dan pastikan tidak ada kesalahan input, jika terjadi kesalahan maka diluar tanggung jawab pihak PPDB SMAS Kartikatama Kota Metro</p>
-                            <p class="fst-italic mb-0">*Pastikan Email yang anda gunakan selalu aktif, karena hasil pendaftaran akan dikirimkan ke Email yang didaftarkan</p>
+                            <p class="fst-italic">*Pastikan Email yang anda gunakan selalu aktif, karena hasil pendaftaran akan dikirimkan ke Email yang didaftarkan</p>
+                            <p class="fst-italic mb-0">*Jika sudah melewati tanggal pengumuan yang sudah ditentukan tidak ada notifikasi email harap segera menghubungi tim PPDB SMAS kartikatama Kota Metro melalui kontak yang tertera</p>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
@@ -281,12 +279,8 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Temukan elemen tombol
             var btnDaftar = document.getElementById('btnDaftar');
-
-            // Tambahkan event listener untuk menangani klik tombol
             btnDaftar.addEventListener('click', function() {
-                // Tampilkan pesan konfirmasi menggunakan SweetAlert
                 Swal.fire({
                     title: 'Apakah Anda Yakin?',
                     text: 'Pastikan Email yang digunakan selalu aktif, karena hasil pendaftaran akan dikirimkan ke Email',

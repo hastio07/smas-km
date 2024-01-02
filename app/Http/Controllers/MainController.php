@@ -32,4 +32,8 @@ class MainController extends Controller
     {
         return view('main.DetailGuru');
     }
+    public function newsdetails()
+    {
+        return view('main.NewsDetails');
+    }
 }
