@@ -1,0 +1,39 @@
+.card-line {
+    width: 120px;
+    height: 2px;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.custom-card {
+    transition: transform 0.3s ease;
+    padding: 5px;
+}
+
+.custom-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+.custom-card:hover {
+    transform: scale(1.1);
+}
+
+.custom-card img {
+    width: 100%;
+    height: 300px;
+    z-index: 0;
+}
+
+
+.custom-card:hover::before {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

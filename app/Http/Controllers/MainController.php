@@ -40,4 +40,16 @@ class MainController extends Controller
     {
         return view('main.TeacherList');
     }
+    public function history()
+    {
+        return view('main.History');
+    }
+    public function orgstructure()
+    {
+        return view('main.OrgStructure');
+    }
+    public function visimisi()
+    {
+        return view('main.VisiMisi');
+    }
 }

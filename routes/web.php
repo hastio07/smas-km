@@ -29,6 +29,9 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/MainPpdb', 'mainppdb');
     Route::get('/NewsDetails', 'newsdetails');
     Route::get('/TeacherList', 'teacherlist');
+    Route::get('/History', 'history');
+    Route::get('/OrgStructure', 'orgstructure');
+    Route::get('/VisiMisi', 'visimisi');
 });
 
 // Rute Authentication
