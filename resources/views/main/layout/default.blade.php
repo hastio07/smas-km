@@ -17,7 +17,7 @@
     <!-- Bootstrap styles js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- custom styles  -->
-    <link href="{{ asset('assets/css/default.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/css-content/user/GlobalMain.css') }}" rel="stylesheet">
     @stack('styles')
 </head>
 
@@ -41,26 +41,33 @@
                     <div class="navbar-collapse collapse text-center" id="navbarNavDropdown">
                         <ul class="navbar-nav d-flex align-items-center ms-auto">
                             <li class="nav-item position-relative">
-                                <a aria-current="page" class="nav-link text-decoration-none text-dark position-relative active" href="/">HOME</a>
+                                <a aria-current="page" class="nav-link text-decoration-none text-dark position-relative active" href="/">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-decoration-none text-dark position-relative" href="/MainPpdb">PPDB</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-decoration-none text-dark position-relative" href="/profil">PROFIL</a>
+                            <li class="nav-item dropdown">
+                                <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
+                                    Profil
+                                </a>
+                                <ul class="dropdown-menu position-absolute bg-white" style="border-bottom: 5px solid #4a397e">
+                                    <li><a class="dropdown-item text-decoration-none text-dark" href="/History">Sejarah</a></li>
+                                    <li><a class="dropdown-item text-decoration-none text-dark" href="/VisiMisi">Visi & Misi</a></li>
+                                    <li><a class="dropdown-item text-decoration-none text-dark" href="/OrgStructure">Struktur Organisasi</a></li>
+                                    <li><a class="dropdown-item text-decoration-none text-dark" href="/TeacherList">Data Guru</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">
-                                    Dropdown
+                                    Gallery
                                 </a>
-                                <ul class="dropdown-menu position-absolute bg-white">
-                                    <li><a class="dropdown-item text-decoration-none text-dark" href="#">Action</a></li>
-                                    <li><a class="dropdown-item text-decoration-none text-dark" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu position-absolute bg-white" style="border-bottom: 5px solid #4a397e">
+                                    <li><a class="dropdown-item text-decoration-none text-dark" href="">Foto</a></li>
+                                    <li><a class="dropdown-item text-decoration-none text-dark" href="">Video</a></li>
                                 </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-decoration-none text-dark position-relative" href="">Ekstrakurikuler</a>
                             </li>
                             @auth($guard)
                                 <li class="nav-item">
@@ -69,7 +76,7 @@
                             @endauth
                             @guest
                                 <li class="nav-item">
-                                    <a class="btn bg-smas ms-3" href="/login/admin">LOGIN</a>
+                                    <a class="nav-link text-decoration-none text-smas fw-bold position-relative" href="/login/admin">Login</a>
                                 </li>
                             @endguest
                         </ul>
@@ -136,6 +143,7 @@
                 </div>
         </footer>
     </div>
+    @stack('scripts-carousel')
     @stack('scripts')
     <script>
         // Add this JavaScript for toggling dropdown on click

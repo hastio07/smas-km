@@ -22,12 +22,6 @@ class MainController extends Controller
     {
         return view('main.MainPpdb');
     }
-
-    public function profil()
-    {
-        return view('main.Profil');
-    }
-
     public function detailguru()
     {
         return view('main.DetailGuru');
