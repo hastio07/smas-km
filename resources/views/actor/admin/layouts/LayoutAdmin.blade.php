@@ -40,6 +40,9 @@
                     <div class="theme-switch-icon"></div>
                 </div>
                 <div class="header-content">
+                    <a class="text-decoration-none text-muted mx-3" href="/">
+                        <i class="fa-solid fa-house-lock"></i>
+                    </a>
                     <div class="notification dropdown">
                         <a aria-expanded="false" data-bs-toggle="dropdown" href="#">
                             <i class="far fa-envelope"></i>
@@ -228,7 +231,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="link" href="/teacher">
+                        <a class="link" href="/adminteacher">
                             <i class="fa-solid fa-chalkboard-user"></i>
                             <span>Data Tendik</span>
                         </a>
@@ -243,12 +246,6 @@
                         <a class="link" href="/news">
                             <i class="fa-regular fa-newspaper"></i>
                             <span>Data Berita</span>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a class="link" href="/profile">
-                            <i class="fa-regular fa-newspaper"></i>
-                            <span>Data Profile</span>
                         </a>
                     </li>
                     <li>
@@ -280,6 +277,29 @@
                         <ul class="sub-menu">
                             <li><a class="link" href="element-accordion.html"><span>Foto</span></a></li>
                             <li><a class="link" href="element-tabs-collapse.html"><span>Video</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="main-menu has-dropdown" href="#">
+                            <i class="fa-solid fa-laptop-file"></i>
+                            <span>Profile</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a class="link" href="/adminhistory"><span>Sejarah</span></a></li>
+                            <li><a class="link" href="/adminvisimisi"><span>Visi & Misi</span></a></li>
+                            <li><a class="link" href="/adminhistory"><span>Struktur Organisasi</span></a></li>
+                            <li><a class="link" href="/adminvisimisi"><span>Kontak & Socmed</span></a></li>
+                            <li><a class="link" href="/adminhistory"><span>Sambutan Kepsek</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="main-menu has-dropdown" href="#">
+                            <i class="fa-solid fa-people-roof"></i>
+                            <span>Kegiatan Sekolah</span>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a class="link" href="/adminhistory"><span>OSIS</span></a></li>
+                            <li><a class="link" href="/adminvisimisi"><span>Ekstrakulikuler</span></a></li>
                         </ul>
                     </li>
                 </ul>

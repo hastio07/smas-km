@@ -4,8 +4,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\NewsController;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TeacherController;
+use App\Http\Controllers\AdminHistoryController;
+use App\Http\Controllers\AdminVisiMisiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,13 +49,16 @@ Route::controller(AuthController::class)
             Route::get('admin', 'index')->name('admin.dashboard'); // Admin Dashboard
         });
         Route::controller(TeacherController::class)->group(function () {
-            Route::get('teacher', 'index')->name('admin.adminteacher'); // Admin Dashboard
+            Route::get('adminteacher', 'index')->name('admin.adminteacher'); // Admin Dashboard
         });
         Route::controller(NewsController::class)->group(function () {
             Route::get('news', 'index')->name('admin.adminnews'); // Admin Dashboard
         });
-        Route::controller(ProfileController::class)->group(function () {
-            Route::get('profile', 'index')->name('admin.adminprofile'); // Admin Dashboard
+        Route::controller(AdminHistoryController::class)->group(function () {
+            Route::get('adminhistory', 'index')->name('admin.adminhistory'); // Admin Dashboard
+        });
+        Route::controller(AdminVisiMisiController::class)->group(function () {
+            Route::get('adminvisimisi', 'index')->name('admin.adminvisimisi'); // Admin Dashboard
         });
 
         Route::post('logout', 'logout')->name('logout'); // Proses Logout
