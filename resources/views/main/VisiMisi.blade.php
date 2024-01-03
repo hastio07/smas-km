@@ -25,6 +25,17 @@
                     <li>Menyediakan sarana dan prasarana yang mendukung proses belajar-mengajar yang efektif.</li>
                 </ol>
             </div>
+            <hr>
+            <div class="my-5">
+                <h5 class="fw-bold">Tujuan</h5>
+                <ol class="mt-3">
+                    <li>Mengembangkan potensi siswa dalam bidang akademis, seni, dan olahraga.</li>
+                    <li>Menanamkan nilai-nilai moral, etika, dan kepemimpinan kepada seluruh anggota sekolah.</li>
+                    <li>Melibatkan orang tua dan masyarakat dalam proses pendidikan.</li>
+                    <li>Menerapkan teknologi modern dalam pembelajaran untuk menciptakan keterampilan yang relevan dengan masa depan.</li>
+                    <li>Menyediakan sarana dan prasarana yang mendukung proses belajar-mengajar yang efektif.</li>
+                </ol>
+            </div>
         </div>
     </div>
 @endsection
