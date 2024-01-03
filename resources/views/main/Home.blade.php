@@ -31,6 +31,7 @@
                 </button>
             </div>
         </div>
+        {{-- sambutan kepala sekolah --}}
         <div class="mt-5">
             <div class="mb-4">
                 <h3 class="fw-bold">Sambutan Kepala Sekolah</h3>
@@ -47,8 +48,12 @@
                 </div>
             </div>
         </div>
+        {{-- cuplikan foto gallery --}}
         <div class="mt-5">
-            <h3 class="text-center">Lorem Ipsum</h3>
+            <div class="d-flex justify-content-between">
+                <h3 class="text-start">Foto Kegiatan</h3>
+                <a class="text-decoration-none text-end" href="">selengkapnya</a>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat numquam unde quos harum commodi, quam repudiandae a sequi, eveniet eaque blanditiis. Similique eos recusandae alias praesentium cum officia expedita!</p>
             <div class="row">
                 <div class="col-md-4 col-lg-3 mb-2">
@@ -66,15 +71,20 @@
             </div>
 
         </div>
+        {{-- beberapa berita --}}
         <div class="mt-5">
-            <h3 class="text-center">Lorem Ipsum</h3>
+            <div class="d-flex justify-content-between">
+                <h3 class="text-start">Berita Terkini</h3>
+                <a class="text-decoration-none text-end" href="">selengkapnya</a>
+            </div>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat numquam unde quos harum commodi, quam repudiandae a sequi, eveniet eaque blanditiis. Similique eos recusandae alias praesentium cum officia expedita!</p>
             <div class="row">
                 <div class="col-sm-6 mb-2">
                     <div class="card h-100 mb-3 border-0" style="background: rgba(233, 232, 232, 0.336)">
                         <div class="row g-0">
                             <div class="col-xl-4 d-flex align-items-center justify-content-center p-3">
-                                <img alt="..." class="img-fluid rounded" src="{{ asset('assets/image/PPDB/daftar1.jpeg') }}">
+                                <img alt="..." class="img-fluid object-fit-cover rounded" src="{{ asset('assets/image/PPDB/daftar1.jpeg') }}" style="height:200px; width:200px">
                             </div>
                             <div class="col-xl-8">
                                 <div class="card-body">
@@ -90,7 +100,7 @@
                     <div class="card h-100 mb-3 border-0" style="background: rgba(233, 232, 232, 0.336)">
                         <div class="row g-0">
                             <div class="col-xl-4 d-flex align-items-center justify-content-center p-3">
-                                <img alt="..." class="img-fluid rounded" src="{{ asset('assets/image/siswa2.jpg') }}">
+                                <img alt="..." class="img-fluid object-fit-cover rounded" src="{{ asset('assets/image/siswa2.jpg') }}" style="height:200px; width:200px">
                             </div>
                             <div class="col-xl-8">
                                 <div class="card-body">
@@ -104,8 +114,12 @@
                 </div>
             </div>
         </div>
+        {{-- cuplikan video gallery --}}
         <div class="mt-5">
-            <h3 class="text-center">Lorem Ipsum</h3>
+            <div class="d-flex justify-content-between">
+                <h3 class="text-start">Video Kegiatan</h3>
+                <a class="text-decoration-none text-end" href="">selengkapnya</a>
+            </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat numquam unde quos harum commodi, quam repudiandae a sequi, eveniet eaque blanditiis. Similique eos recusandae alias praesentium cum officia expedita!</p>
             <div class="row my-3">
                 <div class="col-md-6 mb-sm-3">
