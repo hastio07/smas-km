@@ -9,8 +9,8 @@
 
 @section('content')
     <section class="pt-3">
-        <div class="container rounded shadow">
-            <div class="my-3 p-3">
+        <div class="container">
+            <div class="my-3 rounded p-3 shadow">
                 <div class="output-message active mt-4" id="pesan">
                     <h3 class="display-4" style="color: #4a397e">Formulir Penerimaan Siswa Baru</h3>
                     <h5 style="color: #2d2150">SMAS Kartikatama Kota Metro</h5>
@@ -260,6 +260,25 @@
                     </div>
                 </div> --}}
             </div>
+            <div class="mt-3 rounded p-4 shadow">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                </p>
+            </div>
+            <h3 class="mt-4">Lorem Ipsum is simply dummy</h3>
+            <p>Lorem Ipsum is simply dummy</p>
+            <div class="d-flex my-5 flex-wrap gap-3">
+                <div class="d-inline-block bg-smas rounded-4 d-flex align-items-center mb-3 p-3">
+                    <i class="fa-solid fa-phone fs-1 me-3"></i>
+                    <span>087726754356</span>
+                </div>
+                <div class="d-inline-block bg-smas d-flex align-items-center rounded-4 mb-3 p-3">
+                    <i class="fa-brands fa-whatsapp fs-1 me-3"></i>
+                    <span>087726754356</span>
+                </div>
+            </div>
+
+
         </div>
     </section>
 
