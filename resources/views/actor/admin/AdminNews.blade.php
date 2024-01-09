@@ -87,35 +87,47 @@
                 </div>
 
                 {{-- input Berita --}}
+                @if (session('success'))
+                    <p class="text-success">
+                        {{ session('success') }}
+                    </p>
+                @endif
+
                 <div class="h-100 mt-2 rounded border p-3">
-                    <p class="fw-bold">Form Tambah Berita</p>
-                    <form action="">
+                    <p class="fw-bold">Form Tambah Berita 1</p>
+                    <form action="{{ route('admin.addnews') }}" enctype="multipart/form-data" method="post">
+                        @csrf
                         <div class="mt-1">
                             <div class="mb-2">
                                 <label class="form-label" for="judul">Topik Berita</label>
-                                <input class="form-control" id="judul" placeholder="Judul Berita" type="text">
+                                <input class="form-control" id="judul" name="topik" placeholder="Judul Berita" type="text">
+                                @error('topik')
+                                    <p class="text-danger">
+                                        {{ $message }}
+                                    </p>
+                                @enderror
                             </div>
                             <div class="mb-2">
                                 <label class="form-label" for="deskripsi">Deskripsi</label>
-                                <textarea class="form-control" id="deskripsi" placeholder="Deskripsi Berita"></textarea>
+                                <textarea class="form-control" id="deskripsi" name="isiBerita" placeholder="Deskripsi Berita"></textarea>
                             </div>
                             <div class="mb-2" id="dropArea">
-                                <form id="imageUploadForm">
+                                <div id="imageUploadForm">
                                     <div class="form-group rounded border p-2">
                                         <label class="custom-file-label btn btn-primary ms-1" for="imageInput">
                                             <i class="bi bi-cloud-arrow-up"></i>
                                         </label>
                                         <span id="uploadText"> or drag the image here</span>
-                                        <input accept="image/*" class="custom-file-input" id="imageInput" style="display: none;" type="file">
+                                        <input accept="image/*" class="custom-file-input" id="imageInput" style="display: none;" type="file"name="foto">
                                     </div>
                                     <div class="form-group mt-2">
                                         <img class="img-thumbnail" id="imagePreview" style="display: none; max-height:150px">
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
+                        <button class="btn btn-primary" type="submit">Upload <i class="fa-solid fa-cloud-arrow-up"></i></button>
                     </form>
-                    <button class="btn btn-primary">Upload <i class="fa-solid fa-cloud-arrow-up"></i></button>
                 </div>
             </div>
         </div>

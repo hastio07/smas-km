@@ -52,10 +52,12 @@ Route::controller(AuthController::class)
             Route::get('adminteacher', 'index')->name('admin.adminteacher'); // Admin Dashboard
         });
         Route::controller(NewsController::class)->group(function () {
-            Route::get('news', 'index')->name('admin.adminnews'); // Admin Dashboard
+            Route::get('news', 'index')->name('admin.adminnews');
+            Route::post('news', 'store')->name('admin.addnews');
+            Route::delete('news-delete', 'destroy')->name('admin.deletenews');
         });
         Route::controller(AdminHistoryController::class)->group(function () {
-            Route::get('adminhistory', 'index')->name('admin.adminhistory'); // Admin Dashboard
+            Route::get('adminhistory', 'index')->name('admin.adminhistory');
         });
         Route::controller(AdminVisiMisiController::class)->group(function () {
             Route::get('adminvisimisi', 'index')->name('admin.adminvisimisi'); // Admin Dashboard
