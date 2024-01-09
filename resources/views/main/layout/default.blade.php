@@ -6,6 +6,8 @@
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="{{ csrf_token() }}" name="csrf-token">
     <title>SMA 1 Kartikatama | @yield('title')</title>
+
+    <link href="{{ asset('assets/image/logo.jpg') }}" rel="shortcut icon">
     <!-- Boostrap styles -->
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
     <!-- Boostrap icons -->
