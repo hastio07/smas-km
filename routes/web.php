@@ -25,7 +25,6 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('/sambutan', 'sambutan');
     Route::get('/formppdb', 'formppdb');
-    Route::get('/DetailGuru', 'detailguru');
     Route::get('/MainPpdb', 'mainppdb');
     Route::get('/NewsDetails', 'newsdetails');
     Route::get('/TeacherList', 'teacherlist');
