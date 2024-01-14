@@ -15,7 +15,8 @@ body {
 
 /* Navbar Style */
 .nav-style {
-    background-color: rgba(248, 248, 248, 0.671) !important;
+    backdrop-filter: blur(3px);
+    background-color: rgba(248, 248, 248, 0.671);
 }
 
 .nav-link::before {
