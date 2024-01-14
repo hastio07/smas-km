@@ -1,7 +1,7 @@
 @extends('main.layout.default')
 @section('title', 'Home')
 @push('styles')
-    <link href="{{ asset('assets/css/css-content/user/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/css-content/user/Home.css') }}" rel="stylesheet">
 @endpush
 
 @section('content')
@@ -49,27 +49,24 @@
             </div>
         </div>
         {{-- cuplikan foto gallery --}}
-        <div class="mt-5">
-            <div class="d-flex justify-content-between">
-                <h3 class="text-start">Foto Kegiatan</h3>
-                <a class="text-decoration-none text-end" href="">selengkapnya</a>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur fugiat numquam unde quos harum commodi, quam repudiandae a sequi, eveniet eaque blanditiis. Similique eos recusandae alias praesentium cum officia expedita!</p>
+        <div class="foto-gallery mt-5">
             <div class="row">
                 <div class="col-md-4 col-lg-3 mb-2">
-                    <img alt="..." class="img-thumbnail img-fluid d-block" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
+                    <a data-lightbox="gallery" data-title="Image 1" href="{{ asset('assets/image/PPDB/daftar1.jpeg') }}">
+                        <img alt="Image 1" class="img-fluid img-thumbnail h-100 object-fit-cover rounded" src="{{ asset('assets/image/PPDB/daftar1.jpeg') }}">
+                    </a>
                 </div>
                 <div class="col-md-4 col-lg-3 mb-2">
-                    <img alt="..." class="img-thumbnail img-fluid d-block" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
+                    <a data-lightbox="gallery" data-title="Image 2" href="{{ asset('assets/image/PPDB/daftar2.jpg') }}">
+                        <img alt="Image 2" class="img-fluid img-thumbnail h-100 object-fit-cover rounded" src="{{ asset('assets/image/PPDB/daftar2.jpg') }}">
+                    </a>
                 </div>
                 <div class="col-md-4 col-lg-3 mb-2">
-                    <img alt="..." class="img-thumbnail img-fluid d-block" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
-                </div>
-                <div class="col-md-4 col-lg-3 mb-2">
-                    <img alt="..." class="img-thumbnail img-fluid d-block" src="https://images.freeimages.com/images/large-previews/d9c/bees-1391145.jpg">
+                    <a data-lightbox="gallery" data-title="Image 3" href="{{ asset('assets/image/PPDB/alur.jpg') }}">
+                        <img alt="Image 3" class="img-fluid img-thumbnail h-100 object-fit-cover rounded" src="{{ asset('assets/image/PPDB/alur.jpg') }}">
+                    </a>
                 </div>
             </div>
-
         </div>
         {{-- beberapa berita --}}
         <div class="mt-5">
