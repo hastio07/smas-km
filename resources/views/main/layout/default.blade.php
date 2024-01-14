@@ -18,6 +18,9 @@
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
     <!-- Bootstrap styles js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    {{-- lightbox cdn --}}
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
     <!-- custom styles  -->
     <link href="{{ asset('assets/css/css-content/user/GlobalMain.css') }}" rel="stylesheet">
     @stack('styles')
@@ -26,7 +29,7 @@
 <body class="d-flex flex-column">
     <div class="d-flex flex-column flex-grow-1">
         <header>
-            <nav class="navbar navbar-expand-lg nav-style fixed-top bg-body-tertiary">
+            <nav class="navbar navbar-expand-lg nav-style fixed-top">
                 <div class="container-fluid container">
                     <a class="navbar-brand" href="/">
                         <div class="d-flex align-items-center gap-3">
@@ -69,7 +72,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-decoration-none text-dark position-relative" href="">Ekstrakurikuler</a>
+                                <a class="nav-link text-decoration-none text-dark position-relative" href="/contact">Kontak</a>
                             </li>
                             @auth($guard)
                                 <li class="nav-item">
@@ -147,6 +150,8 @@
     </div>
     @stack('scripts-carousel')
     @stack('scripts')
+
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
     <script>
         // Add this JavaScript for toggling dropdown on click
         document.addEventListener("DOMContentLoaded", function() {

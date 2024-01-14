@@ -42,4 +42,8 @@ class MainController extends Controller
     {
         return view('main.VisiMisi');
     }
+    public function contact()
+    {
+        return view('main.Contact');
+    }
 }

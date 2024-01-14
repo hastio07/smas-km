@@ -31,6 +31,7 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/History', 'history');
     Route::get('/OrgStructure', 'orgstructure');
     Route::get('/VisiMisi', 'visimisi');
+    Route::get('/contact', 'contact');
 });
 
 // Rute Authentication
