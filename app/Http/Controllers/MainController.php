@@ -46,4 +46,8 @@ class MainController extends Controller
     {
         return view('main.Contact');
     }
+    public function foto()
+    {
+        return view('main.Foto');
+    }
 }

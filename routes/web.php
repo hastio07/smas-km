@@ -32,6 +32,7 @@ Route::controller(MainController::class)->group(function () {
     Route::get('/OrgStructure', 'orgstructure');
     Route::get('/VisiMisi', 'visimisi');
     Route::get('/contact', 'contact');
+    Route::get('/foto', 'foto');
 });
 
 // Rute Authentication

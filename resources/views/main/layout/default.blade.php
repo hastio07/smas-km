@@ -67,7 +67,7 @@
                                     Gallery
                                 </a>
                                 <ul class="dropdown-menu position-absolute bg-white" style="border-bottom: 5px solid #4a397e">
-                                    <li><a class="dropdown-item text-decoration-none text-dark" href="">Foto</a></li>
+                                    <li><a class="dropdown-item text-decoration-none text-dark" href="/foto">Foto</a></li>
                                     <li><a class="dropdown-item text-decoration-none text-dark" href="">Video</a></li>
                                 </ul>
                             </li>
